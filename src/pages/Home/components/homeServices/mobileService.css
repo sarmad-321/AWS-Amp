@@ -1,0 +1,64 @@
+.ServiceSwiper.swiper-container  {
+  width:100%;
+  height: 100%;
+}
+.benifitContainer {
+        padding: '3.4375rem 0';
+        background: 'rgb(233, 233, 233)';
+        border-radius: 8px;
+    }
+
+.benMainContainer {
+    position: relative;
+    padding: 17px 11px
+}
+.bendesignContainer {
+    width: 101px;
+    height: 152px;
+    background:#064D7B;
+    position: absolute;
+    border-radius: 10px 0px 10px 10px;
+    z-index: -1;
+    bottom: 17px;
+    right: 11px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+} 
+.swiper-container {
+  width: 80%;
+}
+.ServiceSwiper .swiper-slide {
+  text-align: center;
+  width: 300px;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+ 
+.ServiceSwiper .swiper-button-next {
+  stroke: #064D7B;
+    stroke-width: 2;
+}
+ .ServiceSwiper .swiper-button-prev {
+    stroke: #064D7B;
+    stroke-width: 2;
+  
+} 
+
+
+
+@media screen and (max-width: 600px) {
+    
+}

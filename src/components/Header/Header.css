@@ -1,0 +1,14 @@
+ .menuButton{
+        font-family: "Open Sans, sans-serif";
+        font-Weight: 700;
+        size: "18px";
+        margin-left: "38px";
+        color: 'white'
+    };
+    .MuiDrawer-paper {
+width: 60% !important;
+}
+   
+.MuiPaper-root.MuiDrawer-paper.MuiDrawer-paperAnchorRight.MuiPaper-elevation16{
+    background-color: black;
+}

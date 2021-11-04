@@ -1,0 +1,54 @@
+.ContactForm.swiper-container {
+	width: 100%;
+	height: 68vh;
+	overflow: hidden;
+}
+/* @media only screen and (max-width: 350px) {
+  .ContactForm.swiper-container {
+	
+	height: 75vh;
+	
+}
+} */
+.ContactForm .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	width: "100%";
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	/* -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; */
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	-webkit-align-items: start;
+	align-items: start;
+	overflow: hidden;
+	padding-top: 0px;
+}
+
+.ContactForm .swiper-button-next{
+  left: 7rem;
+}
+.ContactForm .swiper-button-prev{
+  left: 0;
+}
+.ContactForm .swiper-button-next,.swiper-button-prev{
+	color:#064d7b;
+    top: auto;
+    bottom: 0;
+	width: fit-content;
+	width: 96px;
+    height: 36px;
+    font-weight: bold;
+	border-radius: 5px;
+	border: 1px solid #064d7b;
+	background-color: white;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="131.509" height="59" viewBox="0 0 131.509 59">
+  <g id="Group_3155" data-name="Group 3155" transform="translate(-125.491 -69)">
+    <text id="IVATT_ST_RAGE" data-name="IVATT
+ST   RAGE" transform="translate(158 94)" fill="#ffd335" font-size="23" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">IVATT</tspan><tspan fill="#064d7b"><tspan x="0" y="28" xml:space="preserve">ST   RAGE</tspan></tspan></text>
+    <path id="Icon_ionic-ios-lock" data-name="Icon ionic-ios-lock" d="M18.917,9.632H17.874V7.6a4.172,4.172,0,1,0-8.343-.056V9.632H8.488A1.743,1.743,0,0,0,6.75,11.37v8.343a1.743,1.743,0,0,0,1.738,1.738H18.917a1.743,1.743,0,0,0,1.738-1.738V11.37A1.743,1.743,0,0,0,18.917,9.632Zm-4.606,5.423v2.99a.623.623,0,0,1-.578.626.609.609,0,0,1-.639-.608V15.055a1.391,1.391,0,1,1,1.217,0Zm2.346-5.423h-5.91V7.546a2.955,2.955,0,0,1,5.91,0Z" transform="translate(178.697 101.051)" fill="#064d7b"/>
+    <text id="SELF" transform="translate(133.793 124.266) rotate(-49)" fill="#064d7b" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">SELF</tspan></text>
+  </g>
+</svg>

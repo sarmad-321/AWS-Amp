@@ -1,0 +1,44 @@
+.storageCarousel.swiper-container {
+    width: 97%;
+    height: auto;
+    padding-bottom: 3.75rem;
+}
+
+.storageCarousel .swiper-button-next,
+.swiper-button-prev {
+    top: auto;
+    bottom: 0;
+}
+
+.storageCarousel .swiper-button-next {
+    left: 10%;
+}
+
+.storageCarousel .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: start;
+    align-items: start; */
+    max-width: 200px;
+}
+
+.swiper-slide {
+    width: 100%;
+}
+.storageCarousel.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+    transform: none;
+}

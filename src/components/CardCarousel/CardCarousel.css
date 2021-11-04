@@ -1,0 +1,94 @@
+.cardCarousels.swiper-container {
+    width: 100%;
+    cursor: pointer;
+}
+.cardCarousels .swiper-wrapper{
+    padding-top: 2rem;
+}
+.cardCarousels .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    max-width: 490px;
+}
+
+.cardCarousels .swiper-slide {
+    padding-left: 10px;
+}
+.cardCarousels .swiper-button-next{
+    stroke: #064D7B;
+    stroke-width: 2;
+ }
+.cardCarousels .swiper-button-prev{
+    stroke: #064D7B;
+    stroke-width: 2;
+
+}
+.cardCarousels .swiper-button-next,.swiper-button-prev {
+    top: auto;
+    bottom: 0;
+   
+}
+.cardCarousels .swiper-button-prev {
+    left: 0%;
+     margin: 0;
+     border: none;
+}
+.cardCarousels .swiper-button-prev.swiper-button-disabled {
+    left:0;
+    margin: 0;
+}
+
+.cardCarousels .swiper-button-next {
+    left: 4%;
+}
+.cardCarousels .swiper-button-next.swiper-button-disabled {
+    left: 4%;
+}
+
+@media screen and (max-width: 959px) {
+    .cardCarousels .swiper-button-prev {
+        left: 0;
+    }
+    .cardCarousels .swiper-button-prev.swiper-button-disabled {
+        left: 0;
+    }
+    .cardCarousels .swiper-button-next {
+        left: 5%;
+    }
+    .cardCarousels .swiper-button-next.swiper-button-disabled {
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cardCarousels .swiper-button-next {
+        left: 8%;
+    }
+    .cardCarousels .swiper-button-next.swiper-button-disabled {
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cardCarousels .swiper-button-next {
+        left: 10%;
+    }
+    .cardCarousels .swiper-button-next.swiper-button-disabled {
+        left: 10%;
+    }
+}

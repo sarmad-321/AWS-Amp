@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.38" height="33.38" viewBox="0 0 33.38 33.38">
+  <g id="Group_3806" data-name="Group 3806" transform="translate(-817.31 -476)">
+    <path id="Icon_material-access-time" data-name="Icon material-access-time" d="M15.987,3a13,13,0,0,0,0,26,13.381,13.381,0,0,0,5.467-1.2A13,13,0,0,0,15.987,3ZM16,26.4A10.4,10.4,0,1,1,26.4,16,10.4,10.4,0,0,1,16,26.4Zm.65-16.9H14.7v7.8L21.525,21.4l.975-1.6-5.85-3.471Z" transform="translate(817.896 476.587)" fill="#ffd300" stroke="#064d7b" stroke-width="1"/>
+    <g id="Group_3803" data-name="Group 3803" transform="translate(378.17 -10)">
+      <path id="Path_13645" data-name="Path 13645" d="M31.823,7.886H17.329a9.454,9.454,0,0,0-9.443,9.443V31.823a9.454,9.454,0,0,0,9.443,9.443H31.823a9.454,9.454,0,0,0,9.443-9.443V17.329A9.454,9.454,0,0,0,31.823,7.886Zm8.4,23.937a8.412,8.412,0,0,1-8.4,8.4H17.329a8.412,8.412,0,0,1-8.4-8.4V17.329a8.412,8.412,0,0,1,8.4-8.4H31.823a8.412,8.412,0,0,1,8.4,8.4Z" transform="translate(431.254 478.114)" fill="#ffd300"/>
+    </g>
+  </g>
+</svg>

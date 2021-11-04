@@ -1,0 +1,84 @@
+.sizeCarousel.swiper-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 3.75rem;
+}
+
+.sizeCarousel .swiper-button-next,
+.swiper-button-prev {
+    top: auto;
+    bottom: 0;
+}
+.sizeCarousel .swiper-button-prev {
+    left: 0;
+}
+
+.sizeCarousel .swiper-button-next {
+    left: 3%;
+}
+.sizeCarousel .swiper-button-next.swiper-button-disabled {
+    left: 3%;
+}
+
+.sizeCarousel .swiper-button-prev.swiper-button-disabled {
+    left: 0%;
+}
+
+@media screen and (max-width: 700px) {
+    .sizeCarousel .swiper-button-next {
+        left: 8%;
+    }
+    .sizeCarousel .swiper-button-next.swiper-button-disabled {
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .sizeCarousel .swiper-button-next {
+        left: 10%;
+    }
+    .sizeCarousel .swiper-button-next.swiper-button-disabled {
+        left: 10%;
+    }
+}
+
+.sizeCarousel .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: start;
+    align-items: start;
+    max-width: 240px;
+}
+
+.swiper-slide {
+    width: 100%;
+}
+.sizeCarousel.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+    transform: none;
+}
+
+/* .sizeCarousel .swiper-container-android .swiper-slide, .swiper-wrapper
+
+.swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+    left: 50px;
+}
+*/

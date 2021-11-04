@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+   
+    /* overflow-x: hidden; */
+}
+
+section {
+    padding: 2rem 0px;
+    /* min-height: 768px; */
+}
+
+.MuiBox-root {
+    padding: 4rem 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+    .MuiBox-root {
+        padding: 0.8rem 0.2rem !important;
+    }
+}
+
+.MuiGrid-container {
+    padding: 1rem 0;
+}
+
+.color-Madras {
+    color: "#3D3A00";
+}
+
+.header.bg-white {
+    background-color: white;
+}
+
+.header.bg-white .menu-button {
+    color:#064D7B
+}
+
+.header.bg-white .menu-button:hover{
+    background-color: #FFD300;
+    color: #064D7B;
+}

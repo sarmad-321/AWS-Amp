@@ -1,0 +1,15 @@
+/* Home Banner Styling */
+
+.MuiCheckbox-root .MuiSvgIcon-root {
+    color: #3d3a00;
+}
+
+.MuiFormControlLabel-root .MuiTypography-body1 {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.MuiButton-root.Mui-disabled {
+    color: #00000029;
+}
+/* Home Banner Styling End */
