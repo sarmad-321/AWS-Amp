@@ -169,24 +169,23 @@ export const OfficeContact = (props) => {
             </Grid> */}
             
           </Grid>
-          <Grid item spacing={0} xs={12} sm={5} md={5} lg={5}  className={classes.formContainer}>
+          <Grid item spacing={0} xs={12} sm={12} md={5} lg={5}  className={classes.formContainer}>
             <Grid container className={classes.peterBourough} >
               <Typography
-                            variant="h2"
+                            // variant="h2"
                             color="primary"
                             className={classes.headingBold}
                         >
                             Write to  us 
-          </Typography>
+              </Typography>
             {/* <Grid item xs={12} md={12} lg={12}> */}
               <Typography
                  variant="body1"
                   color="textSecondary"
                    className={classes.locatedmsg}
-                    >
-                      Tell us what you want to achieve with Sleeknote and we’ll show 
-                      you how. Book a free live demo below to get your tailored 
-                      introduction to Sleeknote.                     
+              >
+                Tell us how we can help. Book session with one of our storage experts to discuss your requirments in detail.
+                                      
                 
                    </Typography>
             {/* </Grid>             */}
@@ -291,7 +290,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   peterBourough: {
-    padding: "0px 43px ",
+    padding: "0px 0px ",
     
     [theme.breakpoints.only("sm")]: {
           padding: "0px 0px ",
@@ -368,12 +367,10 @@ const useStyles = makeStyles((theme) => ({
         },
   },
   officePicContainer: {
-    
-    padding: '35px 83px',
+    padding: '35px 5%',
     [theme.breakpoints.only("xs")]: {
            padding: '10px 10px',          
     },
-    
   },
   officeFirstCon: {
     height: 513,
@@ -382,7 +379,7 @@ const useStyles = makeStyles((theme) => ({
          height: 313,
            
     },
-    [theme.breakpoints.only("xs")]: {
+    [theme.breakpoints.down("sm")]: {
         display: 'none',
            
     },
@@ -421,7 +418,7 @@ const useStyles = makeStyles((theme) => ({
     height: '56%',
   },
   formContainer: {
-    display: 'flex',
+    // display: 'flex',
     // alignItems: 'flex-end',
     [theme.breakpoints.only("sm")]: {
            alignItems: 'center',           

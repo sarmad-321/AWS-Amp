@@ -104,7 +104,7 @@ export const Information = ({ contactInfo, setContactInfo }) => {
 						<TextField
 							id="outlined-basic"
 							required
-							label="Sir name"
+							label="last name"
 							variant="outlined"
 							color="textSecondary"
 							onChange={handleChange("subname")}
