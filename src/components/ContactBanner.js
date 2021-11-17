@@ -42,7 +42,7 @@ export const ContactBanner = (props) => {
                         <Grid item>
                             <IconText>
                                 <MailOutlineOutlined />
-                                <span>contact@ivattstorage.co.uk</span>
+                                <span>contact@ivattselfstorage.co.uk</span>
                             </IconText>
                         </Grid>
                     </Grid>

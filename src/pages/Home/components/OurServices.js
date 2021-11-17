@@ -96,7 +96,7 @@ export const OurServices = () => {
                         to='#'
                         style={{textDecoration:' none'}}
                       onClick={(e) => {
-                       window.location = "mailto:contact@ivattstorage.co.uk";
+                       window.location = "mailto:contact@ivattselfstorage.co.uk";
                           e.preventDefault();
                        }}
                       >

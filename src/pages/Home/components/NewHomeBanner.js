@@ -67,7 +67,7 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
         {
             image: phoneContact,
             heading:"Quick Contact",
-            contactDataOne:"Email: contact@ivattstorage.co.uk",
+            contactDataOne:"Email: contact@ivattselfstorage.co.uk",
             contactDataTwo: "Phone: 01733306456",
             
         },
