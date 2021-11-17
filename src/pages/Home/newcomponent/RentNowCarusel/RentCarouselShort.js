@@ -421,7 +421,7 @@ const requiredSizeData = [
 		id: 7,
 		img: ft10 ,
 		roomType: "External Container",
-		headingText: "10ft",
+		headingText: "10ft container",
 		cost : 30,
 		paraText:
 			"Approximately ¾ of a single garage. Ideal for storing the contents of a two-bedroom house.",
@@ -430,7 +430,7 @@ const requiredSizeData = [
 		id: 8,
 		img: ft20,
 		roomType: "External Container",
-		headingText: "20ft",
+		headingText: "20ft container",
 		cost : 40,
 		paraText:
 			"Approximately one and a half single garages. Ideal for storing the contents of a three- or four-bedroom house.",

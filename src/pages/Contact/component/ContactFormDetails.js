@@ -19,6 +19,8 @@ import NearMeIcon from "@material-ui/icons/NearMe";
 import ArrowForward from "@material-ui/icons/ArrowForward";
 import ArrowBackIosRounded from "@material-ui/icons/ArrowBackIosRounded";
 
+// image
+import off from "../../../assets/images/off.png";
 // storage icons
 import Building from "../../../assets/Icons/office-building.svg";
 import Home from "../../../assets/Icons/home.svg";
@@ -81,17 +83,10 @@ console.log(formData)
 				paragraph
 			>
 				Hi {contactInfo.nameTitle} {contactInfo.name}{" "}
-				{contactInfo.subname && contactInfo.subname},here is your quote for{" "}
-				<span className={classes.underlinedContainer}>
-					<span>{contactInfo.size.label}</span>
-					<span className={classes.underlined}></span>
-				</span>{" "}
-				 {/* room at Ivatt Self Storage Peterborough{" "}
-				<span className={classes.underlinedContainer}>
-					<span>{contactInfo.duration.label}</span>
-					<span className={classes.underlined}></span>
-				</span>{" "} */}
-				room at Ivatt Way Peterborough.
+				{contactInfo.subname && contactInfo.subname},here is your quote for,{" "}
+				{contactInfo.size.label} room at Ivatt Way Peterborough.
+				
+				
 			</Typography>
 			<Grid container spacing={2} >
 				<Grid item xs={12} sm={4} md={3}>
@@ -116,33 +111,90 @@ console.log(formData)
 						</CardContent>
 					</Card>
 				</Grid>
+
+				<Grid item xs={12} sm={6} md={3}>
+					{/* change image */}
+					<img
+								src={off}
+						alt={contactInfo.type}
+						className={classes.offprice}
+							/>
+					{/* <Card
+						className={`${classes.cardClass} selected `}
+					>
+						<CardContent className={classes.cardContent}>
+							<img
+								src={Building}
+								alt={contactInfo.type}
+								className={classes.cardIcon}
+							/>
+							<Typography variant="subtitle1" paragraph>
+								{contactInfo.type}
+							</Typography>
+							<Typography
+								variant="h4"
+								className={classes.cardHeadingTwo}
+							>
+								{contactInfo.size.label}
+							</Typography>
+						</CardContent>
+					</Card> */}
+				</Grid>
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<Grid
 					item
 					xs={12}
-					sm={4}
+					sm={6}
 					md={4}
 					lg={5}
 					className={classes.detailedGrid}
 				>
 					<Grid container justify="center" spacing={2}>
-						<Grid item xs={6}  className={classes.bordeRight}>
+						<Grid item xs={6} className={classes.bordeRight}>
+							<Typography className={classes.xsFont} color="primary">
+								
+								Discounted Price
+							</Typography>
 							<Typography
 								color="primary"
 								gutterBottom
 								className={classes.contactInfoHeading}
 							>
-								£{
+								{/* £{
 									contactInfo.duration.value <= 8 ?
 									parseFloat( (contactInfo.size.value * contactInfo.duration.value)/2).toFixed(2) :
 								parseFloat(contactInfo.size.value * contactInfo.duration.value) - ((contactInfo.size.value *8)/2 ).toFixed()
 								
-								}
+								} */}
+								
+									£{
+									parseFloat( (contactInfo.size.value )/2 - 0.01 ).toFixed(2) 
+
+									} 
+								
 							</Typography>
 							<Typography color="primary">
-								for {contactInfo.duration.label}
+								Discount / week
 							</Typography>
 						</Grid>
-						<Grid item xs={6}>
+						<Grid item xs={6} className={classes.leftStandard}>
+							<Typography className={classes.xsfont} color="primary">
+								Standard Price
+							</Typography>
 							<Typography
 								gutterBottom
 								color="primary"
@@ -151,14 +203,10 @@ console.log(formData)
 								£{	(contactInfo.size.value)}
 							</Typography>
 							<Typography color="primary">
-								Standard Price
+								Per Week
 							</Typography>
 						</Grid>
-						<Grid item xs={12}>
-							<Typography className={classes.borderText}>
-								50% off 2 Months Storage
-							</Typography>
-						</Grid>
+						
 						<Grid item xs={12}>
 							{button ?<Button
 								variant="contained"
@@ -271,10 +319,13 @@ const useStyles = makeStyles((theme) => ({
 	},
 	bordeRight: {
 		borderRight: "1px solid #064D7B",
+		
 	},
 	contactInfoHeading: {
 		fontWeight: "900",
 		fontSize: "1.75rem",
+		// alignSelf: 'flex-start',
+		// paddingLeft: 28,
 	},
 	borderText: {
 		fontSize: "14px",
@@ -331,6 +382,21 @@ const useStyles = makeStyles((theme) => ({
 	reserveButton2: {
 		fontSize:10
 	},
+	offprice: {
+		width: '100%',
+		height: '100%',
+		objectFit: 'none'
+	},
+	leftStandard: {
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'end'
+	},
+	xsFont: {
+		[theme.breakpoints.down("sm")]: {
+			fontSize:14,
+		},
+	}
 }));
 
 const storageData = [

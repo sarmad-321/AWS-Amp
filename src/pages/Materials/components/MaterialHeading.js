@@ -19,10 +19,10 @@ export const MaterialHeading = () => {
                 className={`${classes.para70} ${classes.para}`}
                 paragraph
             >
-                Our experts in self sorage and pacing are dedicated to offering
-                you unparallel customer service, particularay when it comes to
+               Our experts in self-storage and pacing are dedicated to offering
+                you unparallel customer service, particularly when it comes to
                 packing your valuables with our range of robust boxes and
-                packining accessories.
+                packing accessories.
             </Typography>
             <Button className={classes.btnContact} startIcon={<Phone />}>
                <a href='tel:01733306456' className={classes.dialer}>

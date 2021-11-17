@@ -50,15 +50,8 @@ export const RentCarousel = () => {
 							<Grid item xs={12} md={12}>
 								<Grid item style={{ padding: "1rem 0" }}>
 									<Typography className={classes.heading}>
-										Unsure on
-										<span
-											className={classes.underlyingText}
-										>
-											what size
-											<span
-												className={classes.underlying}
-											></span>
-										</span>{" "}
+										Unsure on 	what size
+										
 										you need?
 									</Typography>
 								</Grid>

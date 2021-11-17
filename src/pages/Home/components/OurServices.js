@@ -69,7 +69,7 @@ export const OurServices = () => {
                         className={classes.serviceHeading}
                         gutterBottom
                     > 
-                        Our <span className={classes.underlyingText}>services<span className={classes.underlying}></span></span>
+                        Our services 
                     </Typography>
                     <Typography
                         variant=""

@@ -24,7 +24,7 @@ export const Feedback = () => {
                         gutterBottom
                         className={classes.headingText}
                     >
-                        What Do <span className={classes.underlyingText}> People<span className={classes.underlying}></span></span> <br/> Say About Us
+                        What Do People Say About Us
                     </Typography>
                     <Typography variant="body1" color="textSecondary" className={classes.clientfeed} paragraph>
                        We have served hundreds of customers. See what they have to say about Ivatt facility.

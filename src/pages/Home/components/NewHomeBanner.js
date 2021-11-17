@@ -80,15 +80,15 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
         {
             image: clock,
             heading:"Office opening times",
-            contactDataOne:"Weekdays 9am – 5:30pm",
-            contactDataTwo:"Saturday 9am – 2pm",
+            contactDataOne:"Weekdays: 9am – 5:30pm",
+            contactDataTwo:"Saturday: 9am – 2pm",
             // contactDataThree:"Sunday closed"
         },
          {
             image: store,
             heading:"Storage access times ",
-            contactDataOne:"Weekdays 8am – 8pm",
-            contactDataTwo:"Weekends 9am – 6pm"
+            contactDataOne:"Weekdays: 8am – 8pm",
+            contactDataTwo:"Weekends: 9am – 6pm"
         },
     ]
 

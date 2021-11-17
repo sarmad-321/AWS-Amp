@@ -13,11 +13,12 @@ import React from "react";
 import { CardCV } from "../../../../components/Card/CardCV";
 
 import car from "../../../../assets/Icons/car.svg"
-import indoor from "../../../../assets/Icons/indoor.svg"
+// import indoor from "../../../../assets/Icons/indoor.svg"
 import delivery from "../../../../assets/Icons/delivery.svg"
 import arrowDown from "../../../../assets/Icons/arrowDown.svg"
 import wareHouse from "../../../../assets/Icons/warehouse.svg"
 import truck from "../../../../assets/Icons/truckB.svg"
+import indoor from "../../../../assets/images/indoor.svg"
 
 export const ServiceCard = () => {
     const classes = useStyles();

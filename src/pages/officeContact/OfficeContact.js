@@ -2,8 +2,8 @@ import { makeStyles, Typography , Grid,Button} from "@material-ui/core";
 import React from "react";
 import { useState, useEffect } from 'react';
 import building from "../../assets/images/building.svg";
-import google from "../../assets/images/google.svg";
-import { useHistory } from "react-router-dom";
+import google from "../../assets/images/google.PNG";
+import { Link, useHistory } from "react-router-dom";
 
 
 
@@ -20,6 +20,7 @@ function getWindowDimensions() {
     height
   };
 }
+
 
 export default function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
@@ -99,6 +100,9 @@ export const OfficeContact = (props) => {
         console.log(error);
       });
   };
+  const handleGoogleMap = () => {
+
+  }
   return (
     <div>
       <Grid container spacing={1} sm={12} md={12} lg={12} spacing-sm-2 className={classes.OfficeContainer}>
@@ -139,8 +143,10 @@ export const OfficeContact = (props) => {
                    alt=""
                   className={classes.largegoogle}
               />
-              <div style={{display:'flex',justifyContent: 'center',position:'absolute', bottom: 0,}}>
-              <Button
+              <div style={{ display: 'flex', justifyContent: 'center', position: 'absolute', bottom: 0, }}>
+               <a style={{textDecoration: 'none'}} href="https://www.google.com/maps/place/Ivatt+Self+Storage/@52.5940669,-0.2666513,17.4z/data=!4m5!3m4!1s0x4877f17c604c2037:0xed286a650df39830!8m2!3d52.5943127!4d-0.2650843" target="_blank">
+                 <Button
+                  onClick={handleGoogleMap }
                             endIcon={
                                         <ArrowForwardOutlinedIcon fontSize="large" />
                                     }
@@ -148,6 +154,8 @@ export const OfficeContact = (props) => {
                   >
                  View on maps
                 </Button>
+                </a>
+                
                 </div>
             </Grid>
             {/* <Grid item className={classes.officeBottomImage}>
@@ -197,8 +205,11 @@ export const OfficeContact = (props) => {
                 
              <TextField size={width < 960 ? "small" : 'big'}
               id="outlined-read-only-input"
+              
               style={{ width: '100%' }}
-              onChange={(e) => setName(e.target.value)}          
+              onChange={(e) => setName(e.target.value)}
+              type='string'
+              required            
               label="Name"          
                    // defaultValue="Hello World"
                       variant="outlined"
@@ -211,10 +222,12 @@ export const OfficeContact = (props) => {
               
            <TextField
             size={width < 960 ? "small" : 'big'}
-             onChange={(e) => setEmail(e.target.value)}             
+            onChange={(e) => setEmail(e.target.value)}             
             id="outlined-read-only-input"
             style={{width:'100%'}}
             label="Email"
+            type="email"
+            required 
           // defaultValue="info@ivatt.com"
                       variant="outlined"
                        InputLabelProps={{
@@ -387,6 +400,7 @@ const useStyles = makeStyles((theme) => ({
     
   },
   largegoogle: {
+    width: '100%',
      [theme.breakpoints.down("md")]: {
            width: '100%'     
     },
@@ -462,7 +476,8 @@ const useStyles = makeStyles((theme) => ({
         background: '#064D7B',
         letterSpacing: '2px',
         '&:hover': {
-       background: "white",
+          background: "white",
+          border: '1px solid #064D7B',
        color:"#064D7B" },
         ["@media (max-width: 361px)"]: {
              width: '246px',

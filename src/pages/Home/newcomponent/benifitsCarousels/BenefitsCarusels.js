@@ -73,10 +73,7 @@ export const BenefitsCarusels = ({ contactInfo, setContactInfo,cardBorder }) => 
                         className={classes.benefitsHeading}
                         
                     >
-                            <span className={classes.underlyingText}>
-                                Store
-                                <span className={classes.underlying}></span>
-                                    </span> Features
+                          Store Features
                             
                     </Typography>
                     
@@ -296,7 +293,7 @@ const requiredSizeData = [
      {
         id: 7,
         icon: flag,
-        headingText: "8 feet hight cellings",
+        headingText: "8ft high ceilings",
         paraText:
             "Luton box van size. Brilliant for storing the contents of a standard 2 bed house",
     },
@@ -310,7 +307,7 @@ const requiredSizeData = [
     {
         id: 6,
         icon: truck,
-        headingText: "forklift service available",
+        headingText: "Forklift service available",
         paraText:
             " A standard single garage. Ideal for storing the contents of a 2 bed house + garage",
     },

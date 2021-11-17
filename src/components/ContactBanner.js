@@ -83,7 +83,7 @@ export const ContactBanner = (props) => {
                         <Grid item>
                             <IconText>
                                 <AccessTime />
-                                <span>Weekdays 9:00 AM – 5:30 PM <br/> Saturday 9:00 AM – 2:00 PM </span>                                
+                                <span>Weekdays: 9:00 AM – 5:30 PM <br/> Saturday: 9:00 AM – 2:00 PM </span>                                
                             </IconText>
                         </Grid>
                     </Grid>
@@ -101,9 +101,9 @@ export const ContactBanner = (props) => {
                         <Grid item>
                             <IconText>
                                 <AccessTime />
-                                <span>Weekdays 8:00 AM – 8:00 PM <br/>
+                                <span>Weekdays: 8:00 AM – 8:00 PM <br/>
 
-Weekends 9:00 AM – 6:00 PM</span>
+Weekends: 9:00 AM – 6:00 PM</span>
                             </IconText>
                         </Grid>
                     </Grid>

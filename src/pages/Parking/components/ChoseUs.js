@@ -49,7 +49,7 @@ We go an extra mile to ensure that your belongings are transported safely and ca
 
 We proudly provide value added house moving services at very competitive prices.
 
-For further details please speak to one of our representatives or browse through our website.
+For further details please speak to one of our representatives or browse through our website. <br/> <a style={{textDecoration: 'none' , color :'#064d7b'}} href="https://www.aandrremovals.com/index.php" target="_blank">www.aandrremovals.com  </a>
                             </Typography>
                         </Grid>
                         {/* <Grid item>
