@@ -107,7 +107,7 @@ const data = [
     
     {
         bgColor: "white",
-        childText: "Transport",
+        childText: "Removals",
         img: truck,
         topText: "Pack",
         bottomText:

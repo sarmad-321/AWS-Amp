@@ -211,6 +211,7 @@ padding:' none',
         ["@media (max-width: 361px)"]: {
              width: '246px',
             fontSize: '10px',
+             background: "red",
         },
         // width: '302px',
        display:' flex',
