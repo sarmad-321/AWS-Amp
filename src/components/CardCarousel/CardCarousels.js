@@ -212,33 +212,209 @@ const useStyles = makeStyles((theme) => ({
 
 const data = [
     {
+        text: "Fantastic company. Very straight forward and easy to get started. The gentleman named Nick, provided a outstanding service. Prices are very reasonable and couldn’t be happier. Would highly recommend to anyone looking for storage👍",
+        name: "Jamie Smart",
+        date: "a month ago",
+        image: "",
+    },
+    {
+        text: "Great place feels very safe and secured well invested facility all updated software and system will definitely recommend for businesses and even if you need help moving houses and a place to store your stuff.",
+        name: "James Houilbecq",
+        date: "a month ago",
+        image: "",
+    },
+    {
         text: "The team here went above and beyond to help me at short notice. They arranged removals, provided me with good quality boxes and a clean and secure storage unit.",
         name: "Matthew Sheehan",
-        date: "22 sep, 2021",
+        date: "2 month ago",
         image: "",
     },
-    {
-        text: "Excellent and secure storage facility with up to date technology. No need for a padlock as all done through an App. Very convenient and easy to use. Amazing value for money and Nick the Storage Manager was always available",
+     {
+        text: "Excellent and secure storage facility with up to date technology. No need for a padlock as all done through an App. Very convenient and easy to use. Amazing value for money and Nick the Storage Manager was always available .",
         name: "Andy Ritchie",
-        date: "07 jun, 2021",
+        date: "4 months ago",
         image: "",
     },
-    {
+      {
         text: "Really competitive price. Absolutely first class service. Nick went above and beyond to help us on multiple occasions. I cannot speak highly enough of Nick and Ivatt Storage. Highly recommend!",
         name: "Behrooz Vahedifar",
-        date: "05 aug, 2021",
+        date: "4 month ago",
         image: "",
     },
-    {
+        {
+        text: "Very good storage. Staff helpful. Good service. 5 star! higly recomended",
+        name: "Sultan Ozan",
+        date: "2 weeks ago",
+        image: "",
+    },
+          {
+        text: "absolutely outstanding,  for the experience Goes beyond the stars rating , very well mannered boss, I would defiantly recommend this storage to anyone that needs storage.",
+        name: "Corina Joanne Cunnington",
+        date: "2 months ago",
+        image: "",
+    },
+      {
         text: "First class customer service with flexible service offerings at a very competitive price. Would definitely use Ivatt Self Storage again...!",
-        name: "Martyn YatesMartyn Yates",
-        date: "12 aug, 2021",
+        name: "Martyn Yates",
+        date: "3 months ago",
         image: "",
     },
-    {
-        text: "The 50% deal for 1 months is great, it really helped me save on moving costs. Nick the Store manager was really friendly and made everything easy, would definitely recommend",
+        {
+        text: "Fantastic Affordable Service, very secure and Safe, Nick the store manager was friendly and helped with all that I required, would definitely recommend.",
+        name: "Andrew Ayling",
+        date: "7 months ago",
+        image: "",
+    },
+          {
+        text: "Friendly staff, reasonable prices. Timely retrieval and good comms. Thats what you need from a good self storage service. .......",
+        name: "Muhammad Saeed",
+        date: "7 months ago",
+        image: "",
+    },
+            {
+        text: "Clean & friendly staff , hassle free & top security! higly recomended",
+        name: "Matt Chapman",
+        date: "6 months ago",
+        image: "",
+    },
+              {
+        text: "Fantastic service, great price and a very safe and secure facility. I would 100% recommend!",
+        name: "Laura Hardeman",
+        date: "9 months ago",
+        image: "",
+    },
+                {
+        text: "The 50% deal for 2 months is great, it really helped me save on moving costs. Nick the Store manager was really friendly and made everything easy, would definitely recommend.",
         name: "Jiten Patel",
-        date: "18 feb, 2021",
+        date: "9 months ago",
         image: "",
     },
+                       {
+        text: "Sorted me out a great 1 year deal. Reasonably priced and secure site.",
+        name: "Richard Benton",
+        date: "9 months ago",
+        image: "",
+    },
+                {
+        text: "Fantastic service, affordable price, helpful and friendly staff, highly recommend",
+        name: "Donatas Zemkus",
+        date: "7 months ago",
+        image: "",
+    },
+                
+              {
+        text: "Great storage and service.very safe and secured well invested facility all updated software , Highly recommended.",
+        name: "Richard Davey",
+        date: "7 months ago",
+        image: "",
+    },
+                {
+        text: "Not even 10 minutes to set up! Everything was so easy and staff are friendly.",
+        name: "Paula Denby",
+        date: "9 months ago",
+        image: "",
+    },
+         {
+        text: "its a good service and easy to deal with peoples! higly recomended",
+        name: "Pedro Flaminco",
+        date: "9 months ago",
+        image: "",
+    },
+                {
+        text: "Excellent service and accessibility Reasonably priced and secure site.! higly recomended",
+        name: "Chris Nicholas",
+        date: "3 months ago",
+        image: "",
+    },
+    
+              {
+        text: "Really grateful you were able to help with such short notice. This company were available and even offered different people to arrange for removal/delivery.",
+        name: "Asad Arif",
+        date: "2 years ago",
+        image: "",
+    },
+                {
+        text: "Faz was extremely helpful and provided easy access to storage. The items were kept secure and gave me ease of mind knowing they were being monitored. I would highly recommend Ivatt Storage.",
+        name: "Waqas Majid",
+        date: "2 years ago",
+        image: "",
+    },
+                       {
+        text: "Hired 2 storage units in between moving houses and kept one even after moving. We had 1 for about 2 months and 1 for almost a year. ",
+        name: "Rehana Yousaf",
+        date: "2 years ago",
+        image: "",
+    },
+                {
+        text: "good and safe place for household items. i was recommended to ivatt storage by a friend that used them before and i also had a good experience for the 4 months i used it for. the guys here have always been helpful",
+        name: "David Cliffe",
+        date: "2 years ago",
+        image: "",
+    },
+
+              {
+        text: "Great service at great prices, easy to access individual storage units to input belongings. Highly recommended.",
+        name: "Shamraiz Iqbal",
+        date: "2 years ago",
+        image: "",
+    },
+                {
+        text: "Great storage place and the best priced one locally. Secure premises - would recommend",
+        name: "Luxe Cars",
+        date: "2 years ago",
+        image: "",
+    },
+                       {
+        text: "Very professional and extremely secure place to store your belonging. Have been using these guys for a number of yrs now on and off when required. Thanks Faz. ",
+        name: "Mohammed Shahid",
+        date: "2 years ago",
+        image: "",
+    },
+                {
+        text: "Thank you Faisal for your help when I've needed it. Your doing a great job and it's a pleasure to be using you.",
+        name: "Tony Conti",
+        date: "2 years ago",
+        image: "",
+    },
+                
+              {
+        text: "Great prices for safe and secure storage! ,Very professional and extremely`",
+        name: "Kamil Ahmed",
+        date: "2 years ago",
+        image: "",
+    },
+                {
+        text: " good place Excellent service and accessibility Your doing a great job",
+        name: "Tomas Mankus",
+        date: "2 years ago",
+        image: "",
+    },
+                       {
+        text: "First class customer service with flexible service offerings at a very competitive price.",
+        name: "Grzegorz P",
+        date: "2 years ago",
+        image: "",
+    },
+                {
+        text: "Best price in Peterborough,Friendly staff, reasonable prices. Timely retrieval and good comms.",
+        name: "Shazia Kouser",
+        date: "2 years ago",
+        image: "",
+    },
+                
+              {
+        text: "Good,Friendly staff,Very good storage. Staff helpful. Good service. 5 star",
+        name: "Splash",
+        date: "a week ago",
+        image: "",
+    },
+                {
+        text: "recomended! Not even 10 minutes to set up! Everything was so easy and staff are friendly",
+        name: "Egidijus Alaburda",
+        date: "6 months ago",
+        image: "",
+    },
+    
+        
+   
 ];
