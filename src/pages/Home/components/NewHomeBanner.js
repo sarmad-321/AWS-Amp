@@ -15,7 +15,7 @@ import { Delete, PhoneOutlined } from "@material-ui/icons";
 import { useHistory } from "react-router-dom";
 import React, { useState } from "react";
 import { ButtonCV } from "../../../components/Button/ButtonCV";
-
+// kkkk
 // icons
 import BuildingWhite from "../../../assets/Icons/office-building.svg";
 import BuildingBlue from "../../../assets/Icons/office-building-blue.svg";
