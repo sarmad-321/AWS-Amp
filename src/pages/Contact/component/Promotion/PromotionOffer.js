@@ -22,7 +22,7 @@ const promotionTypeData = [
 	},
 	{
 		id: 3,
-		type: "2 months",
+		type: "1 months",
 		value : 8
 	},
 	{

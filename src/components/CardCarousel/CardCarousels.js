@@ -236,7 +236,7 @@ const data = [
         image: "",
     },
     {
-        text: "The 50% deal for 2 months is great, it really helped me save on moving costs. Nick the Store manager was really friendly and made everything easy, would definitely recommend",
+        text: "The 50% deal for 1 months is great, it really helped me save on moving costs. Nick the Store manager was really friendly and made everything easy, would definitely recommend",
         name: "Jiten Patel",
         date: "18 feb, 2021",
         image: "",

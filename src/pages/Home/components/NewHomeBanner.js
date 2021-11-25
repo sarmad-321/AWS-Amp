@@ -116,7 +116,7 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
             
                     <Grid item xs={12} lg={6} className={classes.offContainer}>
                         {/* <Grid container lg={6} style={{background:'yellow' ,padding: 0, alignItems: 'center'}}>
-                            <Grid item lg={10}>  50% off 2 Months Storage</Grid>
+                            <Grid item lg={10}>  50% off 1 Months Storage</Grid>
                             <Grid item lg={2}>
                                 <Button><ArrowForwardOutlinedIcon /></Button>
                             </Grid>
@@ -127,7 +127,7 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
                                     }
                             className={classes.rightSideBtn}
                             >
-                           50% off 2 Months Storage
+                           50% off 1 Months Storage
                            </Button>
                     </Grid>
                     <Grid item lg={12} >

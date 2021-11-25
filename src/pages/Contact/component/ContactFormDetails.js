@@ -68,7 +68,7 @@ console.log(formData)
   };
 	
 	return (
-		<Container>
+		<Container className={classes.paddingBottom}>
 			{/* <Button
 				startIcon={<ArrowBackIosRounded />}
 				onClick={handleClick}
@@ -163,8 +163,24 @@ console.log(formData)
 					lg={5}
 					className={classes.detailedGrid}
 				>
-					<Grid container justify="center" spacing={2}>
-						<Grid item xs={6} className={classes.bordeRight}>
+					<Grid container justify="center" spacing={0}>
+						<Grid item xs={6}  className={classes.bordeRight}>
+							<Typography className={classes.xsFont} color="primary">
+								Standard Price
+							</Typography>
+							<Typography
+								gutterBottom
+								color="primary"
+								className={[classes.contactInfoHeading , classes.lineCut]}
+							>
+								£{	(contactInfo.size.value)}
+							</Typography>
+							<Typography color="primary" className={[classes.alignRight , classes.paddingTag]}>
+								Per Week
+							</Typography>
+							
+						</Grid>
+						<Grid item xs={6} className={classes.leftStandard}>
 							<Typography className={classes.xsFont} color="primary">
 								
 								Discounted Price
@@ -187,23 +203,8 @@ console.log(formData)
 									} 
 								
 							</Typography>
-							<Typography color="primary">
-								Discount / week
-							</Typography>
-						</Grid>
-						<Grid item xs={6} className={classes.leftStandard}>
-							<Typography className={classes.xsfont} color="primary">
-								Standard Price
-							</Typography>
-							<Typography
-								gutterBottom
-								color="primary"
-								className={classes.contactInfoHeading}
-							>
-								£{	(contactInfo.size.value)}
-							</Typography>
-							<Typography color="primary">
-								Per Week
+							<Typography color="primary" className={classes.alignRight}>
+								per week
 							</Typography>
 						</Grid>
 						
@@ -319,9 +320,21 @@ const useStyles = makeStyles((theme) => ({
 	},
 	bordeRight: {
 		borderRight: "1px solid #064D7B",
+		display: 'flex',
+		flexDirection: 'column',
+		paddingLeft:16
+		// paddingRight: '1rem'
 		
 	},
+	alignRight: {
+		alignSelf:'end'
+	},
+	lineCut: {
+		textDecoration:" line-through",
+        textDecorationColor:" red",
+	},
 	contactInfoHeading: {
+		
 		fontWeight: "900",
 		fontSize: "1.75rem",
 		// alignSelf: 'flex-start',
@@ -377,9 +390,11 @@ const useStyles = makeStyles((theme) => ({
 		paddingTop: "4px",
 	},
 	reserveButton: {
+		marginTop: 10,
 		color: "#ffffff",
 	},
 	reserveButton2: {
+		
 		fontSize:10
 	},
 	offprice: {
@@ -390,9 +405,19 @@ const useStyles = makeStyles((theme) => ({
 	leftStandard: {
 		display: 'flex',
 		flexDirection: 'column',
-		alignItems: 'end'
+		alignItems: 'start',
+		paddingLeft: '23px',
+	},
+	paddingTag: {
+		paddingRight: '24px'
+	},
+	paddingBottom: {
+			[theme.breakpoints.down("md")]: {
+			paddingBottom:'10vw'
+		},
 	},
 	xsFont: {
+		fontSize:18,
 		[theme.breakpoints.down("sm")]: {
 			fontSize:14,
 		},

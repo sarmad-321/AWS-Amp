@@ -20,7 +20,7 @@ export const MaterialHeading = () => {
                 paragraph
             >
                Our experts in self-storage and pacing are dedicated to offering
-                you unparallel customer service, particularly when it comes to
+                you unparallelled customer service, particularly when it comes to
                 packing your valuables with our range of robust boxes and
                 packing accessories.
             </Typography>
