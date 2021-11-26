@@ -115,7 +115,7 @@ console.log(formData)
 				<Grid item xs={12} sm={6} md={3}>
 					{/* change image */}
 					<img
-								src={off}
+						src={off}
 						alt={contactInfo.type}
 						className={classes.offprice}
 							/>

@@ -127,7 +127,7 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
                                     }
                             className={classes.rightSideBtn}
                             >
-                           50% off 1 Months Storage
+                           50% off 2 Months Storage
                            </Button>
                     </Grid>
                     <Grid item lg={12} >
