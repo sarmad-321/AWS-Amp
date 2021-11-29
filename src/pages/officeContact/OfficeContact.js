@@ -2,7 +2,7 @@ import { makeStyles, Typography , Grid,Button} from "@material-ui/core";
 import React from "react";
 import { useState, useEffect } from 'react';
 import building from "../../assets/images/building.svg";
-import google from "../../assets/images/google.png";
+// import google from "../../assets/images/google.png";
 import { Link, useHistory } from "react-router-dom";
 
 
@@ -139,11 +139,11 @@ export const OfficeContact = (props) => {
          
           <Grid item sm={7} md={7} lg={7} spacing={1} className={classes.officeFirstCon}>
             <Grid item className={classes.officeTopImage}>
-               <img
+               {/* <img
                   src={google}
                    alt=""
                   className={classes.largegoogle}
-              />
+              /> */}
               <div style={{ display: 'flex', justifyContent: 'center', position: 'absolute', bottom: 0, }}>
                <a style={{textDecoration: 'none'}} href="https://www.google.com/maps/place/Ivatt+Self+Storage/@52.5940669,-0.2666513,17.4z/data=!4m5!3m4!1s0x4877f17c604c2037:0xed286a650df39830!8m2!3d52.5943127!4d-0.2650843" target="_blank">
                  <Button
