@@ -67,8 +67,8 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
         {
             image: phoneContact,
             heading:"Quick Contact",
-            contactDataOne:"Email: contact@ivattselfstorage.co.uk",
-            contactDataTwo: "Phone: 01733306456",
+            contactDataOne:"contact@ivattselfstorage.co.uk",
+            contactDataTwo: "01733306456",
             
         },
         {
@@ -80,8 +80,8 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
         {
             image: clock,
             heading:"Office opening times",
-            contactDataOne:"Weekdays: 9am – 5:30pm",
-            contactDataTwo:"Saturday: 9am – 2pm",
+            contactDataOne:"Weekdays: 9:00AM – 5:30PM",
+            contactDataTwo:"Saturday: 9:00AM – 2:00PM",
             // contactDataThree:"Sunday closed"
         },
          {

@@ -2,7 +2,7 @@ import { makeStyles, Typography , Grid,Button} from "@material-ui/core";
 import React from "react";
 import { useState, useEffect } from 'react';
 import building from "../../assets/images/building.svg";
-import google from "../../assets/images/google.PNG";
+import google from "../../assets/images/google.png";
 import { Link, useHistory } from "react-router-dom";
 
 
