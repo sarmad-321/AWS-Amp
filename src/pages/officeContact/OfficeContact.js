@@ -5,7 +5,8 @@ import building from "../../assets/images/building.svg";
 // import google from "../../assets/images/google.png";
 import { Link, useHistory } from "react-router-dom";
 
-
+// import indoor from "../../../../assets/images/indoor.svg"
+import addressMap from "../../assets/images/map.jpg"
 
 import ArrowForwardOutlinedIcon from "@material-ui/icons/ArrowForwardOutlined";
 import TextField from '@material-ui/core/TextField';
@@ -140,8 +141,8 @@ export const OfficeContact = (props) => {
           <Grid item sm={7} md={7} lg={7} spacing={1} className={classes.officeFirstCon}>
             <Grid item className={classes.officeTopImage}>
                <img 
-                  src="https://s1.cdn.autoevolution.com/images/news/how-google-maps-knows-youre-braking-hard-so-it-can-find-safer-routes-162191_1.jpg"
-                   alt=""
+                  src={addressMap}
+                   alt="image"
                  className={classes.largegoogle}
               />
               <div style={{ display: 'flex', justifyContent: 'center', position: 'absolute', bottom: 0, }}>
