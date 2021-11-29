@@ -381,6 +381,7 @@ const useStyles = makeStyles((theme) => ({
   },
   officePicContainer: {
     padding: '35px 5%',
+    paddingBottom:0,
     [theme.breakpoints.only("xs")]: {
            padding: '10px 10px',          
     },
