@@ -44,6 +44,7 @@ export const ServiceCard = () => {
                                 img={item.img}
                                 key={key}
                                 href={item.href}
+                                marginTop={item.margnTop}
                             >
                                 {item.childText}
                             </CardCV>
@@ -81,7 +82,8 @@ const data = [
         bottomText: "We offer individual internal smart entry units",
         buttonText: "Explore",
         label: "Business",
-		href: "/quote",
+        href: "/quote",
+        margnTop:'2px'
     },
     {
         bgColor: "white",

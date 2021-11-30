@@ -1,4 +1,4 @@
-import { makeStyles, Typography , Grid,Button} from "@material-ui/core";
+import { makeStyles, Typography , Grid,Button ,Container,} from "@material-ui/core";
 import React from "react";
 import { useState, useEffect } from 'react';
 import building from "../../assets/images/building.svg";
@@ -106,7 +106,7 @@ export const OfficeContact = (props) => {
 
   }
   return (
-    <div>
+    <Container>
       <Grid container spacing={1} sm={12} md={12} lg={12} spacing-sm-2 className={classes.OfficeContainer}>
         
         {/* <Grid item className={classes.labelOn}>
@@ -276,7 +276,7 @@ export const OfficeContact = (props) => {
         </Grid>
         
      </Grid>           
-   </div>
+   </Container>
   );
 };
 

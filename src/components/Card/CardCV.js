@@ -119,9 +119,8 @@ const useStyles = makeStyles((theme) => ({
 export const CardCV = (props) => {
     const { height, width } = useWindowDimensions();
 
-    const history = useHistory();
-    const classes = useStyles(props);
-    
+   const history = useHistory();
+   const classes = useStyles(props);
    const handleButton = (href, label) => {
        console.log('sdsddfsd')
 			
@@ -148,7 +147,6 @@ export const CardCV = (props) => {
                     component="h2"
                     gutterBottom
         >
-                    
                     {props.children}
                 </Typography>
                 <Typography className={classes.pos}>
@@ -174,9 +172,10 @@ export const CardCV = (props) => {
                 <img
                     src={props.img}
                       className={classes.icon}
-                                                />
+                />
                 <Typography
                     className={classes.title}
+                    style={{marginTop: props.marginTop}}
                     variant="h5"
                     component="h2"
                     gutterBottom
