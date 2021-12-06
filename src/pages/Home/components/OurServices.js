@@ -128,7 +128,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         // alignItems: "center",
         flexDirection: "column",
-        paddingInline: "1rem",
+        // paddingInline: "1rem",
+        margin:'1rem',
         order: 1,
         [theme.breakpoints.up("lg")]: {
             order: 6,

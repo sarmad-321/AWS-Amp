@@ -31,7 +31,7 @@ export const ServiceCard = () => {
                             xs={12}
                             sm={'auto'}
                             md={'auto'}
-                            lg={2}
+                            lg={'auto'}
                             // align-items-xs-center
                             className={`${classes.gridItem}`}
                             style={{ order: key + 2 }}

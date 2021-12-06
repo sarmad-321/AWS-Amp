@@ -39,8 +39,8 @@ export default function useWindowDimensions() {
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width: "198px",
-        height: "289px",
+        width: "185px",
+        height: "280px",
         display: "flex",
         flexDirection: "column",
         borderRadius: 10,
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     },
     cardButton: {},
     title: {
-        fontSize: '20px',
+        fontSize: '18px',
         color:'#064D7B',
         fontWeight: "bold",
         ["@media (max-width: 1182px) and (min-width: 964px)"]: {
