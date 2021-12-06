@@ -19,7 +19,7 @@ export const MaterialHeading = () => {
                 className={`${classes.para70} ${classes.para}`}
                 paragraph
             >
-               Our experts in self-storage and pacing are dedicated to offering
+               Our experts in self-storage and packing are dedicated to offering
                 you unparallelled customer service, particularly when it comes to
                 packing your valuables with our range of robust boxes and
                 packing accessories.

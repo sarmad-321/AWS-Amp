@@ -25,8 +25,8 @@ import "./Header.css";
 
 import ClearIcon from '@material-ui/icons/Clear';
 import { mergeClasses } from "@material-ui/styles";
-import  review from "../../assets/Icons/review.svg"
-import  reviewLight from "../../assets/Icons/reviewLight.svg"
+import  reviewLight from "../../assets/Icons/reviewLeft.svg"
+import  review from "../../assets/Icons/reviewLeftLight.svg"
 export default function NewTopHeader({
 	headercolor,
 	hideQuoteButton,
@@ -146,13 +146,7 @@ export default function NewTopHeader({
 						onClose: handleDrawerClose,
 					}}
 				>
-					{/* <ul className={drawerContainer}>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                    </ul> */}
+				
 					<div className={drawerContainer}>
 						<div className={drawerCross} onClick={handleDrawerClose}><ClearIcon style={{color:'white'}}/></div>
 						{getDrawerChoices()}

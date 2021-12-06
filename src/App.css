@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     word-break: break-word;
-   
     /* overflow-x: hidden; */
 }
 
@@ -13,7 +12,7 @@ section {
 }
 
 .MuiBox-root {
-    padding: 4rem 0 !important;
+    padding: 3vw 5vw;
 }
 
 @media screen and (max-width: 600px) {

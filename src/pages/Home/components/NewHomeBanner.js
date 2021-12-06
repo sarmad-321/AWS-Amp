@@ -87,8 +87,8 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
          {
             image: store,
             heading:"Storage access times ",
-            contactDataOne:"Weekdays: 8am – 8pm",
-            contactDataTwo:"Weekends: 9am – 6pm"
+            contactDataOne:"Weekdays: 8AM – 8PM",
+            contactDataTwo:"Weekends: 9AM – 6PM"
         },
     ]
 

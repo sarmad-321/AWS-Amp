@@ -20,7 +20,7 @@ import ArrowForward from "@material-ui/icons/ArrowForward";
 import ArrowBackIosRounded from "@material-ui/icons/ArrowBackIosRounded";
 
 // image
-import off from "../../../assets/images/off.png";
+import off from "../../../assets/images/off.svg";
 // storage icons
 import Building from "../../../assets/Icons/office-building.svg";
 import Home from "../../../assets/Icons/home.svg";

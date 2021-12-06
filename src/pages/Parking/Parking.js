@@ -9,7 +9,7 @@ import { ContactBanner } from "../../components/ContactBanner";
 
 export const Parking = ({ setShowHeader,setHeaderColor }) => {
     setShowHeader(true);
-    setHeaderColor('white')
+    setHeaderColor('primary')
 
     return (
         <>

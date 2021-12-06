@@ -169,6 +169,9 @@ const useStyles = makeStyles((theme) => ({
         //  justifyContent: "center",
         
 
+        [theme.breakpoints.up("lg")]: {
+            justifyContent: "center",
+        },
         [theme.breakpoints.only("lg")]: {
             justifyContent: "center",
         },
