@@ -40,7 +40,7 @@ export const Feedback = () => {
 };
 const useStyles = makeStyles((theme) => ({
     root: {
-        paddingLeft: "5vw",
+        paddingLeft: "3vw",
         [theme.breakpoints.down("sm")]: {
             paddingLeft: "2rem",
         },
