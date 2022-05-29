@@ -19,7 +19,7 @@ export const Parking = ({ setShowHeader,setHeaderColor }) => {
             <Box component="section">
                 <ChoseUs />
             </Box>
-            <ContactBanner full zeroPaddingInline />
+            {/* <ContactBanner full zeroPaddingInline /> */}
         </>
     );
 };

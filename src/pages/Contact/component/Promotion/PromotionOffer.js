@@ -12,35 +12,20 @@ import "./PromotionOffer.css";
 const promotionTypeData = [
 	{
 		id: 1,
-		type: "1 week",
+		type: "House",
 		value : 1
 	},
 	{
 		id: 2,
-		type: "1 month",
+		type: "Bungalow",
 		value : 4
 	},
 	{
 		id: 3,
-		type: "2 months",
+		type: "Flat",
 		value : 8
 	},
-	{
-		id: 4,
-		type: "3 months",
-		value : 12
-
-	},
-	{
-		id: 5,
-		type: "6 months",
-		value : 24
-	},
-	{
-		id: 6,
-		type: "1 year+",
-		value : 48
-	},
+	
 ];
 
 export const PromotionOffer = ({ contactInfo, setContactInfo }) => {
@@ -65,33 +50,21 @@ export const PromotionOffer = ({ contactInfo, setContactInfo }) => {
 					className={classes.headingText}
 					gutterBottom
 				>
-					When do you need the storage?
+					Property Address
 				</Typography>
+			
 				<div className={classes.promotioninput}>
-					<OutlinedInput
-						id="date"
-						// label="Birthday"
-						onChange={handleChange("startDate")}
-						type="date"
-						required
-						defaultValue="2021-05-24"
-						className={classes.textField}
-						InputLabelProps={{
-							shrink: true,
-						}}
-						disabled={startDate}
-					/>
-					<Button
+				<Grid container>
+					<TextField
+						id="outlined-basic"
+						type="text"
+						placeholder="Property Address"
 						variant="outlined"
-						color="textSecondary"
-						className={`${classes.contactButton} ${
-							startDate ? "selected" : ""
-						}`}
-						size="large"
-						onClick={() => setStartDate(!startDate)}
-					>
-						I'm not Sure
-					</Button>
+						onChange={handleChange("startDate")}
+						required
+					/>
+				</Grid>
+
 				</div>
 			</Grid>
 			<Grid item className={classes.gridItem}>
@@ -101,7 +74,7 @@ export const PromotionOffer = ({ contactInfo, setContactInfo }) => {
 					gutterBottom
 					className={classes.headingText}
 				>
-					Select your duration
+					Property Type
 				</Typography>
 				{promotionTypeData.map((data, key) => {
 					return (

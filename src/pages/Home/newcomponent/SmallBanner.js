@@ -98,7 +98,7 @@ export const SmallBanner = () => {
                         variant="h4"
                         className={classes.bannerHeading}
                         paragraph
-                    >   Still confused ?  Contact one of our storage experts today
+                    >   Still confused ?  Contact one of our experts today
                     </Typography>
                     {/* <Typography
                         variant="subtitle2"

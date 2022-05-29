@@ -81,19 +81,19 @@ export const GetAQuote = ({ selectedSearch, handleSelectedChange,padding }) => {
                                 color="secondary"
                                 className={classes.headingTwo}
                             >
-                                What type of Storage do you need?
+                                What type of service do you need?
                             </Typography>
                         </Grid>
                         <Grid item xs={12} sm={'auto'} md={'auto'} >
                             <Grid
                                 container
-                                spacing={1}
+                                spacing={2}
                         className={classes.paddingBlock0}
                             >
                                 {storageData.map((item, key) => {
                                     return (
                                         <Grid item xs={6} className={classes.mobilePadding} key={key}>
-                                            <Button
+                                            {/* <Button
                                                 variant="outlined"
                                                 size="large"
                                                 color="secondary"
@@ -123,7 +123,7 @@ export const GetAQuote = ({ selectedSearch, handleSelectedChange,padding }) => {
                                                     }`}
                                                 />
                                                 {item.name}
-                                            </Button>
+                                            </Button> */}
                                         </Grid>
                                     );
                                 })}
@@ -313,7 +313,7 @@ const useStyles = makeStyles((theme) => ({
 const storageData = [
     {
         id: 1,
-        name: "Business",
+        name: "Commercial",
         icon: BuildingPurple,
         icon2: Building,
     },

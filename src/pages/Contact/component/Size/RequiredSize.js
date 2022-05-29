@@ -25,7 +25,7 @@ const [width] = useWindowSize();
 		<Grid container   style={{padding : width < 600 && 5 , }} direction="column" alignItems="flex-start">
 			<Grid item>
 				<Typography  style={{fontSize : width < 600 && 17 , }} variant="h6" color="primary">
-					What’s your required size?
+					What’s your required service?
 				</Typography>
 			</Grid>
 			<Grid container className={classes.requiresSizeContent}>

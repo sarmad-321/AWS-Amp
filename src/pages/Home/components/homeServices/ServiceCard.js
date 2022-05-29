@@ -19,6 +19,11 @@ import arrowDown from "../../../../assets/Icons/arrowDown.svg"
 import wareHouse from "../../../../assets/Icons/warehouse.svg"
 import truck from "../../../../assets/Icons/truckB.svg"
 import indoor from "../../../../assets/images/indoor.svg"
+import sound from '../../../../assets/images/broadcast.png'
+import calculator from '../../../../assets/images/calculator.png'
+import certificate from '../../../../assets/images/certificate.png'
+import fan from '../../../../assets/images/fan.png'
+import ecofunding from '../../../../assets/images/ecofunding.png'
 
 export const ServiceCard = () => {
     const classes = useStyles();
@@ -34,7 +39,7 @@ export const ServiceCard = () => {
                             lg={'auto'}
                             // align-items-xs-center
                             className={`${classes.gridItem}`}
-                            style={{ order: key + 2 }}
+                            style={{ order: key + 1 }}
                         >
                             <CardCV
                                 bgColor={item.bgColor}
@@ -76,46 +81,57 @@ const useStyles = makeStyles((theme) => ({
 const data = [
     {
         bgColor: "white",
-        childText: "Indoor Storage",
-        img:indoor,
-        topText: "Storage",
-        bottomText: "We offer individual internal smart entry units",
-        buttonText: "Explore",
-        label: "Business",
-        href: "/quote",
-        margnTop:'2px'
-    },
-    {
-        bgColor: "white",
-        childText: "Outdoor Storage",
-        img:wareHouse,
-        topText: "Storage",
+        childText: "EPC",
+        img:certificate,
+        // topText: "Storage",
         bottomText:
-            "We offer self storage containers with drive up access.",
+            "We offer Energy performance certificates (EPCs).",
         buttonText: "Explore",
         label: "Business",
-		href: "/quote",
+		href: "/EPC",
     },
     {
         bgColor: "white",
-        childText: "Box Shop",
-        img:arrowDown,
-        topText: "Materials",
-        bottomText: "A wide range of boxes and packaging materials.",
+        childText: "SAP",
+        img:calculator,
+        // topText: "Storage",
+        bottomText:
+            "We offer Standard Assessment Procedure.",
+        buttonText: "Explore",
+        label: "Business",
+		href: "/Sap",
+    },
+    {
+        bgColor: "white",
+        childText: "Air Pressure Test",
+        img:fan,
+        // topText: "Materials",
+        bottomText: "Air pressure testing service.",
         buttonText: "Explore",
         label: "Box Shop",
-		href: "/materials",
+		href: "/AirPressure",
     },
     
     {
         bgColor: "white",
-        childText: "Removals",
-        img: truck,
-        topText: "Pack",
+        childText: "Sound Test",
+        img: sound,
+        // topText: "Pack",
         bottomText:
-            "We also hold strong relationships with a number of removals companies locally.",
+            "We offer sound testing for your building.",
         buttonText: "Explore",
         label: "Parking",
-		href: "/parking",
+		href: "/SoundTest",
     },
+    // {
+    //     bgColor: "white",
+    //     childText: "Eco Funding",
+    //     img:ecofunding,
+    //     // topText: "Storage",
+    //     bottomText:
+    //         "We also offer Eco funding.",
+    //     // buttonText: "Explore",
+    //     label: "Business",
+	// 	href: "/quote",
+    // },
 ];

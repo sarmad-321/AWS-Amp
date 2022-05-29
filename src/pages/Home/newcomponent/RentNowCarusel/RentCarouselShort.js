@@ -366,11 +366,11 @@ const requiredSizeData = [
 	{
 		id: 0,
 		img: ft15,
-		roomType: "Storage Room",
-		headingText: "15sqft",
+		roomType: "",
+		headingText: "EPC",
 		cost : 7.99,
 		paraText:
-			"Approximately the same size as a telephone box. Ideal for stacking boxes, suitcases, and small items of furniture",
+			"Energy Performance Certificate for Existing Building",
 	},
 	{
 		id: 1,

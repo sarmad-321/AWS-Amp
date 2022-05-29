@@ -48,13 +48,29 @@ const [open, setOpen] = React.useState(false);
 			<form onSubmit={handleClick}> 
 			<Grid item className={classes.gridItem}>
 				<Typography variant="h6" color="primary" style={{lineHeight : '0.35em'}} align="left">
+					Name
+				</Typography>
+				<Grid container>
+					<TextField
+						id="outlined-basic"
+						type="text"
+						placeholder="Name"
+						required
+						variant="outlined"
+						onChange={handleChange("phone")}
+						autoComplete={false}
+					/>
+				</Grid>
+			</Grid>
+			<Grid item className={classes.gridItem}>
+				<Typography variant="h6" color="primary" style={{lineHeight : '0.35em'}} align="left">
 					Phone
 				</Typography>
 				<Grid container>
 					<TextField
 						id="outlined-basic"
 						type="number"
-						placeholder="999 999 999"
+						placeholder="Phone Number"
 						required
 						variant="outlined"
 						onChange={handleChange("phone")}

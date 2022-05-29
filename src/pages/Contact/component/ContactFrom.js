@@ -68,12 +68,12 @@ export const ContactFrom = ({
 						typeId={typeId}
 					/>
 				</SwiperSlide>
-				<SwiperSlide>
+				{/* <SwiperSlide>
 					<RequiredSize
 						contactInfo={contactInfo}
 						setContactInfo={setContactInfo}
 					/>
-				</SwiperSlide>
+				</SwiperSlide> */}
 				<SwiperSlide>
 					<PromotionOffer
 						contactInfo={contactInfo}

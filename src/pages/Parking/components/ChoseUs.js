@@ -10,6 +10,7 @@ import {
     Button,
 } from "@material-ui/core";
 import VoiceChatIcon from "@material-ui/icons/VoiceChat";
+import sound from '../../../assets/images/Soundtesting.jpg'
 
 import ParkingImage from "../../../assets/images/A&RRemovals.jpg";
 // import Box from "../../../assets/images/box.png";
@@ -24,7 +25,7 @@ export const ChoseUs = () => {
                         <Avatar
                             variant="square"
                             className={classes.image}
-                            src={ParkingImage}
+                            src={sound}
                         />
                     </Grid>
                 </Grid>
@@ -41,15 +42,9 @@ export const ChoseUs = () => {
                                 variant="body2"
                                 className={classes.iconPara}
                             >
-                                A & R Removals is a family owned Removals Company based in the heart of Peterborough. We work hard to provide you house moving services under a stress free environment.
+                               Sound Insulation Testing is a test devised to check elements of a building for their sound insulation performance in accordance with building regulations Part E. 
 
-Moving house can be very stressful and hectic. Therefore, we do whatever it takes to make the process easy and hassle free. We assist you from the commencement of the relocation process to the placement of the last piece. Our staff is courteous, prompt and professional, who take extra care while treating your belongings.
-
-We go an extra mile to ensure that your belongings are transported safely and carefully. A&R Removals offers a full packing solution where our trained experienced packers will carefully pack all your belongings.
-
-We proudly provide value added house moving services at very competitive prices.
-
-For further details please speak to one of our representatives or browse through our website. <br/> <a style={{textDecoration: 'none' , color :'#064d7b'}} href="https://www.aandrremovals.com/index.php" target="_blank">www.aandrremovals.com  </a>
+When a new construction or the conversion of an existing construction results in two adjoining dwellings being separated by party elements, it is a Building Regulations requirement for these elements to be tested.  <br/> 
                             </Typography>
                         </Grid>
                         {/* <Grid item>

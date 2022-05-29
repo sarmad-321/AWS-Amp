@@ -61,31 +61,10 @@ export const Information = ({ contactInfo, setContactInfo }) => {
 			alignItems="flex-start"
 			className={classes.root}
 		>
-			<Grid item className={classes.gridItem}>
-				<Typography variant="h6" color="primary" style={{lineHeight : '0.35em'}} align="left">
-					Title
-				</Typography>
-				<Grid container  spacing={{ xs: 1, sm: 2, md: 3 }} >
-					{informationData.map((info, key) => {
-						return (
-							<Grid item>
-								<Button
-									className={`${classes.callenderButton} ${
-										selected == info.id ? "selected" : ""
-									}`}
-									variant="outlined"
-									onClick={() => handleClick(info)}
-								>
-									{info.beforeName}
-								</Button>
-							</Grid>
-						);
-					})}
-				</Grid>
-			</Grid>
+		
 			<Grid item style={{marginBottom: width < 600 ? 0 : 30}} className={classes.gridItem}>
 				<Typography variant="h6" color="primary" style={{lineHeight : '0.35em'}} align="left">
-					Name
+					No of bedrooms
 				</Typography>
 
 				
@@ -93,23 +72,15 @@ export const Information = ({ contactInfo, setContactInfo }) => {
 					<Grid item>
 						<TextField
 							id="outlined-basic"
-							label="Name"
+							label="Number"
+							type="number"
 							variant="outlined"
 							color="primary"
 							required
 							onChange={handleChange("name")}
 						/>
 					</Grid>
-					<Grid item>
-						<TextField
-							id="outlined-basic"
-							required
-							label="Last name"
-							variant="outlined"
-							color="textSecondary"
-							onChange={handleChange("subname")}
-						/>
-					</Grid>
+
 				</Grid>
 			</Grid>
 		</Grid>

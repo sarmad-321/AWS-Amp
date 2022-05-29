@@ -36,6 +36,14 @@ import "swiper/components/navigation/navigation.min.css"
 
 import "./benifitsCarusels.css";
 
+///import brands//
+import brand1 from '../../../../assets/brands/1.png'
+import brand2 from '../../../../assets/brands/2.png'
+import brand3 from '../../../../assets/brands/3.png'
+import brand4 from '../../../../assets/brands/4.png'
+import brand5 from '../../../../assets/brands/5.jpg'
+import brand6 from '../../../../assets/brands/6.png'
+
 
 // import Swiper core and required modules
 import SwiperCore, {
@@ -73,7 +81,7 @@ export const BenefitsCarusels = ({ contactInfo, setContactInfo,cardBorder }) => 
                         className={classes.benefitsHeading}
                         
                     >
-                          Store Features
+                          Accreditation bodies
                             
                     </Typography>
                     
@@ -127,7 +135,8 @@ export const BenefitsCarusels = ({ contactInfo, setContactInfo,cardBorder }) => 
                                     <CardContent
                                         className={classes.cardContent}
                                     >
-                                        <img src={cardItem.icon} alt="" />
+                                        <img src={cardItem.icon} alt="" 
+                        className={classes.iconsize} />
                                         <Typography
                                             className={classes.cardHeading}
                                         >
@@ -158,10 +167,13 @@ export const BenefitsCarusels = ({ contactInfo, setContactInfo,cardBorder }) => 
 const useStyles = makeStyles((theme) => ({
     main: {
         borderRadius: '8px',
-        backgroundColor: '#eaf8ff'
+        backgroundColor: 'white'
     },
     swiperContainer: {
         padding: '0rem 1rem'
+    },
+    iconsize:{
+        height:50,
     },
     benefitsHeading: {
         paddingTop:'3rem',
@@ -263,54 +275,48 @@ const useStyles = makeStyles((theme) => ({
 const requiredSizeData = [
     {
         id: 1,
-        icon: Benifitone,
-        headingText: "Smart entry technology",
+        icon: brand1,
+        headingText: "ATTMA",
         paraText:
             "Telephone box size. An ideal size for storing boxes, suitcases, and small furniture",
     },
 
     {
         id: 2,
-        icon: Benifit,
-        headingText: "Convenient location",
+        icon: brand2,
+        headingText: "TrustMark",
         paraText:
             "Small garden shed size. Great for storing the contents of a 1 bed studio flat",
     },
     {
         id: 3,
-        icon:  calender,
-        headingText: "Access 7 days a week",
+        icon:  brand3,
+        headingText: "CoreLogic",
         paraText:
             "Large garden shed size. Perfect for storing the contents of a 1 bed flat",
     },
     {
         id: 4,
-        icon: Benefitwo,
-        headingText: "24 Hour CCTV",
+        icon: brand4,
+        headingText: "ECMK",
         paraText:
             "Half a single garage size. Ideal for storing the contents of a small 2 bed house",
     },
      {
         id: 7,
-        icon: flag,
-        headingText: "8ft high ceilings",
+        icon: brand5,
+        headingText: "Elmhurst Energy",
         paraText:
             "Luton box van size. Brilliant for storing the contents of a standard 2 bed house",
     },
     {
         id: 5,
-        icon: car,
-        headingText: "Drive up access",
+        icon: brand6,
+        headingText: "Stroma Certification",
         paraText:
             "Luton box van size. Brilliant for storing the contents of a standard 2 bed house",
     },
-    {
-        id: 6,
-        icon: truck,
-        headingText: "Forklift service available",
-        paraText:
-            " A standard single garage. Ideal for storing the contents of a 2 bed house + garage",
-    },
+   
     
    
 ];

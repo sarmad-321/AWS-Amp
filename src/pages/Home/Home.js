@@ -67,9 +67,9 @@ export const Home = ({ setShowHeader, setHeaderColor }) => {
 			<div component="section">
 				<BenefitsCarusels />
 			</div>
-			<Box component="section">
+			{/* <Box component="section">
 				<Feedback />
-			</Box>
+			</Box> */}
 			<ContactBanner full zeroPaddingInline />
 			{/* <Hidden smDown>
                 <CardFooter

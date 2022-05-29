@@ -16,6 +16,9 @@ import { Parking } from "./pages/Parking/Parking";
 import { FormContextProvide } from "./pages/Home/Home";
 import { OfficeContact } from "./pages/officeContact/OfficeContact";
 import NewTopHeader from "./components/Header/NewTopHeader";
+import { AirPressure } from "./pages/airpressure/AirPressure";
+import {EPC} from './pages/EPC/EPC';
+import {Sap} from './pages/Sap/Sap'
 
 function App() {
 	const [showHeader, setShowHeader] = useState(true);
@@ -74,9 +77,39 @@ function App() {
 				/>
 				<Route
 					exact
-					path="/parking"
+					path="/SoundTest"
 					render={() => (
 						<Parking
+							setShowHeader={setShowHeader}
+							setHeaderColor={setHeaderColor}
+						/>
+					)}
+				/>
+					<Route
+					exact
+					path="/AirPressure"
+					render={() => (
+						<AirPressure
+							setShowHeader={setShowHeader}
+							setHeaderColor={setHeaderColor}
+						/>
+					)}
+				/>
+				<Route
+					exact
+					path="/EPC"
+					render={() => (
+						<EPC
+							setShowHeader={setShowHeader}
+							setHeaderColor={setHeaderColor}
+						/>
+					)}
+				/>
+				<Route
+					exact
+					path="/Sap"
+					render={() => (
+						<Sap
 							setShowHeader={setShowHeader}
 							setHeaderColor={setHeaderColor}
 						/>

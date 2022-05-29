@@ -185,7 +185,7 @@ export default function ShortHeader() {
 	return (
 		<header>
 			<AppBar
-				className={header}
+				// className={header}
 				position="static"
 				elevation={0}
 				className={appBar}

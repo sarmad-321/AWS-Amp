@@ -94,7 +94,8 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "bold",
     },
     icon: {
-        padding: '6px 0px'
+        padding: '6px 0px',
+        height:65
     },
     xsIcon: {
         width: '60vw',
@@ -137,7 +138,7 @@ export const CardCV = (props) => {
             <Grid item xs={4} className={classes.xsFlex}>
                 <img
                     src={props.img}
-                      className={classes.xsicon}
+                      className={classes.icon}
                     />
             </Grid>
             <Grid item xs={8} className={classes.xsText}>
@@ -153,6 +154,7 @@ export const CardCV = (props) => {
                     {props.bottomTitle}
                 </Typography>
                 <Button
+                    onClick={() => {history.push(props.href)}}
                     size="small"
                     className={classes.cardButtonText}
                     endIcon={
@@ -171,6 +173,7 @@ export const CardCV = (props) => {
                 </Typography>
                 <img
                     src={props.img}
+                    
                       className={classes.icon}
                 />
                 <Typography

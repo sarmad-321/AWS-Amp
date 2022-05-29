@@ -145,7 +145,7 @@ console.log(' slide number',slideNo)
 							className={classes.rightSideHeadingText}
 							gutterBottom
 						>
-						 Contact one of our storage expert today
+						 Contact one of our expert today
 						</Typography>
 						<Typography
 							variant="subtitle1"

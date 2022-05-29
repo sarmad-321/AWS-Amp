@@ -78,7 +78,7 @@ export const OurServices = () => {
                         paragraph
                     >
                         To find out more about our services, contact one of our
-                        storage experts.
+                        experts.
                     </Typography>
                     <ButtonCV
                         variant="outlined"
@@ -96,7 +96,7 @@ export const OurServices = () => {
                         to='#'
                         style={{textDecoration:' none'}}
                       onClick={(e) => {
-                       window.location = "mailto:contact@ivattselfstorage.co.uk";
+                       window.location = "mailto:sarmadshakeel20@gmail.com";
                           e.preventDefault();
                        }}
                       >

@@ -88,19 +88,21 @@ export const OfficeContact = (props) => {
     let email = UserEmail;
     let message = msg;
 
-    axios
-      .post("https://ivatt-backend.herokuapp.com/register", {
-        user_name: user_name,
-        email: email,
-        message: message,
-      })
-      .then(function (response) {
-        history.push("/");
-        window.location.reload();
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    alert("Sumbitted")
+
+    // axios
+    //   .post("https://ivatt-backend.herokuapp.com/register", {
+    //     user_name: user_name,
+    //     email: email,
+    //     message: message,
+    //   })
+    //   .then(function (response) {
+    //     history.push("/");
+    //     window.location.reload();
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
   };
   const handleGoogleMap = () => {
 

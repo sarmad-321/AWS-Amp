@@ -32,19 +32,34 @@ import "./Storage.css";
 // import Swiper core and required modules
 import SwiperCore, { Navigation } from "swiper/core";
 
+import certificate from '../../../../assets/images/certificate.png'
+import sap from '../../../../assets/images/calculator.png'
+import fan from '../../../../assets/images/fan.png'
+import sound from '../../../../assets/images/broadcast.png'
+
 // install Swiper modules
 SwiperCore.use([Navigation]);
 
 const storageData = [
 	{
 		id: 1,
-		name: "Business",
-		icon: Building,
+		name: "EPC",
+		icon: certificate,
 	},
 	{
 		id: 2,
-		name: "Domestic",
-		icon: Home,
+		name: "SAP",
+		icon: sap,
+	},
+	{
+		id: 3,
+		name: "Air Pressure Test",
+		icon: fan,
+	},
+	{
+		id: 4,
+		name: "Sound Test",
+		icon: sound,
 	},
 ];
 
@@ -72,7 +87,7 @@ export const Storage = ({ selectedSearch,contactInfo, setContactInfo, typeId }) 
 					// className={classes.headingText}
 					paragraph
 				>
-					What type of storage do you need?
+					What type of service do you need?
 				</Typography>
 			</Grid>
 			<Grid container spacing={3} className={"cardContainer"}>

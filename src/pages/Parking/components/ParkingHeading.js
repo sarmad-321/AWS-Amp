@@ -20,19 +20,15 @@ export const ParkingHeading = () => {
                 className={classes.heading}
                 gutterBottom
             >
-                Our removal services
+                Our Sound Testing Service
             </Typography>
-            <Typography color="textSecondary"
-                className={`${classes.para70} ${classes.para}`}
-                paragraph>
-                A & R Removals is a family owned Removals Company based in the heart of Peterborough. We work hard to provide you house moving services under a stress free environment.
-            </Typography>
+           
             <Typography
                 color="textSecondary"
                 className={classes.textBold}
                 paragraph
             >
-                Give us a call to book your removal services
+                Give us a call to book your sound testing services
             </Typography>
             <Button
                 startIcon={<Phone />}

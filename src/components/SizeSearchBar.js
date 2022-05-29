@@ -71,25 +71,21 @@ const ResponsiveSearchBar = ({ selected, setSelected }) => {
                 }}
                 MenuProps={{ classes: { paper: classes.dropdownStyle } }}
             >
-                <MenuItem value={0}>15sqft</MenuItem>
-                <MenuItem value={1}>25sqft</MenuItem>
-                <MenuItem value={2}>35sqft</MenuItem>
-                <MenuItem value={3}>50sqft</MenuItem>
-                <MenuItem value={4}>75sqft</MenuItem>
-                <MenuItem value={5}>100sqft</MenuItem>
-                <MenuItem value={6}>10ft</MenuItem>
-                <MenuItem value={7}>20ft</MenuItem>
+                <MenuItem value={0}>EPC</MenuItem>
+                <MenuItem value={1}>SAP</MenuItem>
+                <MenuItem value={2}>Air Pressure Test</MenuItem>
+                <MenuItem value={3}>Sound Test</MenuItem>
             </Select>
         </FormControl>
     );
 };
 const useStyles = makeStyles((theme) => ({
     TopSearchBar: {
-        width: "836px",
+        width: "1000px",
         height: "46px",
         background: "#FFFFFF",
         filter: "drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16))",
-        padding: "3px",
+        padding: "03px",
         marginBottom: theme.spacing(3.75),
         position: "relative",
     },
@@ -121,7 +117,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "18px",
         textAlign: "left",
         color: "#064D7B",
-        width: "96px",
+        width: "180px",
         height: "40px",
         borderRadius: "4px",
         display: "flex",
@@ -170,34 +166,20 @@ const useStyles = makeStyles((theme) => ({
 const data = [
     {
         id: 0,
-        name: "15sqft",
+        name: "EPC",
     },
     {
         id: 1,
-        name: "25sqft",
+        name: "SAP",
     },
     {
         id: 2,
-        name: "35sqft",
+        name: "Air Pressure Test",
     },
     {
         id: 3,
-        name: "50sqft",
+        name: "Sound Test",
     },
-    {
-        id: 4,
-        name: "75sqft",
-    },
-    {
-        id: 5,
-        name: "100sqft",
-    },
-    {
-        id: 6,
-        name: "10ft",
-    },
-    {
-        id: 7,
-        name: "20ft",
-    },
+    
+    
 ];

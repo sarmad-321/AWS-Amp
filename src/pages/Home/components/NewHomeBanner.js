@@ -74,8 +74,8 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
         {
             image: locationContact,
             heading:"Our Location",
-            contactDataOne:"Ivatt Self Storage,Ivatt Way,",
-            contactDataTwo:"Westwood, Peterborough, PE3 7PH."
+            contactDataOne:"Silbury Blvd, Milton Keynes",
+            contactDataTwo:" MK9 2AE, United Kingdom."
         },
         {
             image: clock,
@@ -96,8 +96,8 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
         
         <div className={classes.videoContainer}>
             <div className={classes.overlay}></div>
-             <video src="https://ivattbucket.s3.us-east-2.amazonaws.com/Family.mp4" className={classes.video} autoPlay muted loop>
-          </video>
+             {/* <video src="https://ivattbucket.s3.us-east-2.amazonaws.com/Family.mp4" className={classes.video} autoPlay muted loop>
+          </video> */}
            
         <Container className={classes.downPaddingForHeader}>
            
@@ -110,7 +110,7 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
                             className={classes.heading}
                         >
                             
-                            Peterborough’s Premier <br/> <span style={{fontWeight:'normal'}}>Self Storage Facility</span> 
+                           Innovation <br/> <span style={{fontWeight:'normal'}}>Energy Expert</span> 
                         </Typography>
                     </Grid>
             
@@ -121,20 +121,20 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
                                 <Button><ArrowForwardOutlinedIcon /></Button>
                             </Grid>
                         </Grid> */}
-                             <Button
+                             {/* <Button
                             endIcon={
                                         <ArrowForwardOutlinedIcon fontSize="large" />
                                     }
                             className={classes.rightSideBtn}
                             >
                            50% off 2 Months Storage
-                           </Button>
+                           </Button> */}
                     </Grid>
                     <Grid item lg={12} >
                         <GetAQuote handleSelectedChange={handleSelectedChange} selectedSearch = {selectedSearch} padding={0}/>
                     </Grid>
                     {/* grid item large */}
-                    <Grid container xs={12} sm={12} md={12} lg={12} >
+                    {/* <Grid container xs={12} sm={12} md={12} lg={12} >
                         {contactData.map((data) => {
                             return( <Grid container xs={12} sm={6} md={3} lg={3}  >
                                  <Grid item xs={2} sm={2} lg={2} >
@@ -153,7 +153,7 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
                            </Grid>)
                         })}
                     
-                        </Grid>
+                        </Grid> */}
                         
                     
                 </Grid>
@@ -181,11 +181,12 @@ padding:' none',
         // zIndex:-3,
         position: 'relative',
         marginTop: -90,
-        background:'#064D7B'
+        background:'#00ff43',
+
         
     },
     overlay :{
-    background: '#12356ad4',
+    background: '#126a39d4',
     width: '100%',
     height: '100%',
     position: 'absolute',

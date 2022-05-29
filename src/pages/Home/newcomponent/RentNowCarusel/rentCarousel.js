@@ -50,170 +50,39 @@ export const RentCarousel = () => {
 							<Grid item xs={12} md={12}>
 								<Grid item style={{ padding: "1rem 0" }}>
 									<Typography className={classes.heading}>
-										Unsure on 	what size
-										
-										you need?
+									What is an Energy Performance Certificate (EPC)?
 									</Typography>
 								</Grid>
 								<Grid
 									item
 									className={classes.requiresSizeContainer}
 								>
-									<Grid
-										container
-										className={classes.requiresSizeContent}
-									>
-										<SizeSearchBar
-											selected={selected}
-											setSelected={setSelected}
-										/>
-										<RentCarouselShort
-											selected={selected}
-											setSelected={setSelected}
-											diableSelectButton
-										/>
-									</Grid>
+								
 								</Grid>
-								{/* <Grid item md={12} className="imgslider">
-									<Swiper navigation={true}>
-										{requiredSizeData.map((item, key) => {
-											return (
-												<SwiperSlide
-													style={{ width: "100%" }}
-												>
-													<Grid
-														container
-														sm={12}
-														md={12}
-													>
-														<Grid
-															item
-															xs={12}
-															sm={5}
-															md={6}
-															spacing={0}
-															className={
-																classes.flexImg
-															}
-														>
-															<img
-																className={
-																	classes.srcImg
-																}
-																src={item.img}
-																alt="1"
-															/>
-														</Grid>
-														<Grid
-															item
-															xs={12}
-															sm={5}
-															md={6}
-														>
-															<Grid
-																container
-																className={
-																	classes.rentContainer
-																}
-																lg={12}
-															>
-																<Grid
-																	className={
-																		classes.rentAlign
-																	}
-																	sm={12}
-																	xs={12}
-																	item
-																	md={8}
-																>
-																	<Typography
-																		variant="body1"
-																		color="textSecondary"
-																		className={
-																			classes.storageText
-																		}
-																	>
-																		STORAGE
-																		ROOM
-																	</Typography>
-																</Grid>
+								<Grid container spacing={2}>
+									<Grid item lg={3}>
 
-																<Grid
-																	className={
-																		classes.rentAlign
-																	}
-																	item
-																	xs={12}
-																	lg={12}
-																>
-																	<Typography
-																		className={
-																			classes.BoldHeading
-																		}
-																	>
-																		{
-																			item.headingText
-																		}{" "}
-																	</Typography>
-																</Grid>
-																<Grid
-																	className={
-																		classes.rentAlign
-																	}
-																	sm={12}
-																	xs={12}
-																	item
-																	md={8}
-																>
-																	<Typography
-																		variant="body1"
-																		color="textSecondary"
-																		className={
-																			classes.locatedmsg
-																		}
-																	>
-																		{
-																			item.paraText
-																		}
-																	</Typography>
-																</Grid>
-																<Grid
-																	item
-																	xs={12}
-																	sm={12}
-																	md={12}
-																	className={
-																		classes.rentAlign
-																	}
-																>
-																	<Button
-																		className={
-																			classes.storageBtn
-																		}
-																	>
-																		Rent Now
-																	</Button>
-																</Grid>
-															</Grid>
-														</Grid>
-													</Grid>
-												</SwiperSlide>
-											);
-										})}
-									</Swiper>
-								</Grid> */}
-								<Grid item lg={12}>
+									</Grid>
+
+								<Grid item lg={6}>
 									<Typography
 										variant="body1"
 										color="textSecondary"
 										className={classes.sendMessage}
 									>
-										Need a unique size?
-										<span className={classes.cityLocation}>
-											Send us a message
-										</span>{" "}
+										Energy Performance Certificates (EPC) are documents detailing the results of an assessment which is carried out by an independent and qualified energy assessor. They look at the energy efficiency of a building, give it a rating and also offer recommendations into how to make it more energy efficient. <br></br>
+
+According to the law, when you sell or rent out your property, an EPC must be made available to potential buyers or tenants at the time of it going on the market.<br></br>
+
+Your EPC provides your residential or commercial property with an energy rating from A to G (with ‘A’ being the most energy efficient possible and ‘G’ the least). It goes without saying that the higher the energy efficiency rating is, the more attractive your property will be to potential buyers or tenants – as it will mean saving money on energy bills, less wastage and a more comfortable building to live in. <br></br>
+
+After the assessment has been completed, you will be given the report, complete with recommendations about how to improve your property’s energy rating. This will allow you to highlight to those who are interested in buying or renting the property what they can do to improve it – or if you prefer, you can do it yourself.
+										
 									</Typography>
 								</Grid>
+								</Grid>
+							
+								
 							</Grid>
 						</Grid>
 					</div>
