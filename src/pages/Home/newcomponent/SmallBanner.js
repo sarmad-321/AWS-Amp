@@ -14,7 +14,7 @@ import {Phone } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
     banner: {
-        background: "#064D7B",
+        background: theme.palette.primary.main,
         boxShadow:'0px 10px 30px #00000026',
         borderRadius: "5px",
         padding: "1.5rem 3rem",
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
    
     smallBannerSideBtn: {
         width:182,
-        backgroundColor: "#FFD300",
+        backgroundColor: theme.palette.button.main,
         color: "#064D7B",
         padding: "0.7rem 1.5rem",
         borderRadius: theme.spacing(1),
@@ -98,7 +98,7 @@ export const SmallBanner = () => {
                         variant="h4"
                         className={classes.bannerHeading}
                         paragraph
-                    >   Still confused ?  Contact one of our experts today
+                    >   Still confused ? Contact one of our experts today
                     </Typography>
                     {/* <Typography
                         variant="subtitle2"

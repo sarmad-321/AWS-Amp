@@ -22,7 +22,7 @@ export const AirPressure = ({ setShowHeader,setHeaderColor }) => {
 
     return (
         <>
-            <Box component="section" style={{backgroundColor:'#064D7B'}}>
+            <Box component="section" style={{backgroundColor:'#0f833a'}}>
             <Container maxWidth="lg">
             <Typography
                 variant="h4"

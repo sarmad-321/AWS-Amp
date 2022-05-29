@@ -7,7 +7,7 @@ export const theme = createMuiTheme({
             contrastText: "#FFFFFF",
         },
         secondary: {
-            main: "#064D7B",
+            main: "#0f833a",
             contrastText: "#FFD300",
         },
         info: {
@@ -16,6 +16,9 @@ export const theme = createMuiTheme({
         text: {
             secondary: "#3E3A00",
         },
+        button : {
+            main : "#5ac8fa"
+        }
     },
     typography: {
         fontFamily: "Inter",

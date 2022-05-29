@@ -186,7 +186,7 @@ const useStyles = makeStyles((theme) => ({
 		color:'#064D7B',
 	},
 	rightSide: {
-		backgroundColor: "#064D7B",
+		backgroundColor: theme.palette.primary.main,
 		display: "flex",
 		flexDirection: "column",
 		justifyContent: "center",
