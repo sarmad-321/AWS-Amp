@@ -18,28 +18,32 @@ const promotionTypeData = [
 	{
 		id: 2,
 		type: "Bungalow",
-		value : 4
+		value : 2
 	},
 	{
 		id: 3,
 		type: "Flat",
-		value : 8
+		value : 3
 	},
 	
 ];
 
 export const PromotionOffer = ({ contactInfo, setContactInfo }) => {
 	const [selected, setSelected] = useState(promotionTypeData[0]);
-	const [startDate, setStartDate] = useState(false);
+	
 	const classes = useStyles();
 
 	const handleChange = (prop) => (event) => {
 		setContactInfo({ ...contactInfo, [prop]: event.target.value });
+		console.log(event.target.value)
+	
 	};
 
 	const handleClick = (props) => {
 		setSelected(props);
-		setContactInfo({ ...contactInfo, ["duration"]: {label : props.type , value : props.value} });
+		
+		setContactInfo({ ...contactInfo, ["Property Type"]: {label : props.type , value : props.value} });
+		console.log(selected)
 	};
 	return (
 		<Grid container direction="column" className={classes.root} spacing={1}>
@@ -60,7 +64,7 @@ export const PromotionOffer = ({ contactInfo, setContactInfo }) => {
 						type="text"
 						placeholder="Property Address"
 						variant="outlined"
-						onChange={handleChange("startDate")}
+						onChange={handleChange("address")}
 						required
 					/>
 				</Grid>

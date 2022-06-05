@@ -68,7 +68,7 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
             image: phoneContact,
             heading:"Quick Contact",
             contactDataOne:"contact@ivattselfstorage.co.uk",
-            contactDataTwo: "01733306456",
+            contactDataTwo: "07580902000",
             
         },
         {
@@ -111,6 +111,8 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
                         >
                             
                            Innovation <br/> <span style={{fontWeight:'normal'}}>Energy Expert</span> 
+                           <br />
+                           <p style={{fontSize : 14}}>Sustainable Energy Use</p>
                         </Typography>
                     </Grid>
             
@@ -181,12 +183,11 @@ padding:' none',
         // zIndex:-3,
         position: 'relative',
         marginTop: -90,
-        background:'#00ff43',
-
+        background: theme.palette.primary.main,
         
     },
     overlay :{
-    background: '#126a39d4',
+    background: theme.palette.primary.main,
     width: '100%',
     height: '100%',
     position: 'absolute',

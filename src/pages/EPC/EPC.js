@@ -23,7 +23,7 @@ export const EPC = ({ setShowHeader,setHeaderColor }) => {
 
     return (
         <>
-            <Box component="section" style={{backgroundColor:'#064D7B'}}>
+            <Box component="section" className={classes.infoContainer}>
             <Container maxWidth="lg">
             <Typography
                 variant="h4"
@@ -34,22 +34,7 @@ export const EPC = ({ setShowHeader,setHeaderColor }) => {
                 EPC  (Energy Performance Certificate for Existing Building) 
             </Typography>
            
-            <Typography
-                color="textSecondary"
-                className={classes.textBold}
-                paragraph
-            >
-                Give us a call to book your Air pressure service
-            </Typography>
-            <Button
-                startIcon={<Phone />}
-                color="secondary"
-                className={classes.borderBtn}
-            >
-               <a href='tel:01733306456' className={classes.dialer}>
-							01733306456
-							</a>
-            </Button>
+
         </Container>
             </Box>
             <Box component="section">
@@ -88,71 +73,7 @@ An EPC is valid for 10 years and can be used multiple times during this period. 
 
                             </Typography>
                         </Grid>
-                        {/* <Grid item>
-                            <Typography
-                                variant="subtitle2"
-                                color="primary"
-                                className={classes.infoTopHeading}
-                            >
-                                Choose us
-                            </Typography>
-                            <Typography
-                                variant="h4"
-                                color="primary"
-                                className={classes.infoHeading}
-                                paragraph
-                            >
-                                Why to choose us
-                            </Typography>
-                        </Grid>
-                        <Grid item>
-                            <Avatar
-                                variant="circle"
-                                className={classes.icon}
-                                paragraph
-                            >
-                                <VoiceChatIcon />
-                            </Avatar>
-                            <Typography
-                                variant="h5"
-                                color="textSecondary"
-                                className={classes.iconHeading}
-                                gutterBottom
-                            >
-                                24 hours CCTV security
-                            </Typography>
-                            <Typography
-                                variant="body2"
-                                className={classes.iconPara}
-                            >
-                                Fusce placerat pretium mauris, vel sollicitudin
-                                elit lacinia vitae. Quisque sit amet nisi erat.
-                            </Typography>
-                        </Grid>
-                        <Grid item>
-                            <Avatar
-                                variant="circle"
-                                className={classes.icon}
-                                paragraph
-                            >
-                                <VoiceChatIcon />
-                            </Avatar>
-                            <Typography
-                                variant="h5"
-                                color="textSecondary"
-                                className={classes.iconHeading}
-                                gutterBottom
-                            >
-                                Staff on site 7 days a week
-                            </Typography>
-                            <Typography
-                                variant="body2"
-                                className={classes.iconPara}
-                            >
-                                Fusce placerat pretium mauris, vel sollicitudin
-                                elit lacinia vitae. Quisque sit amet nisi erat.
-                            </Typography>
-                        </Grid> */}
+                    
                     </Grid>
                 </Grid>
             </Grid>
@@ -167,8 +88,11 @@ An EPC is valid for 10 years and can be used multiple times during this period. 
 const useStyles = makeStyles((theme) => ({
     
     
-    infoContainer: {},
-    infoTopHeading: {
+    infoContainer: {
+        backgroundColor : theme.palette.primary.main
+
+    },
+        infoTopHeading: {
         fontWeight: "bold",
     },
     infoHeading: {

@@ -24,6 +24,7 @@ import { MobileServiceCard } from "./homeServices/MobileService";
 // pop up
 import Button from '@material-ui/core/Button'
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -53,6 +54,7 @@ export const OurServices = () => {
     const classes = useStyles();
     const { height, width } = useWindowDimensions();
     const [open, setOpen] = React.useState(false);
+    const history = useHistory();
 
     
 
@@ -89,16 +91,13 @@ export const OurServices = () => {
                         marginRight='5px'
                         border='1px solid #064D7B'
                     >
-                        <span className={classes.call}> <a href='tel:01733306456' className={classes.call}>01733306456</a></span>
+                        <span className={classes.call}> <a href='tel:07580902000' className={classes.call}>07580902000</a></span>
                        
                     </ButtonCV>
                      <Link
                         to='#'
                         style={{textDecoration:' none'}}
-                      onClick={(e) => {
-                       window.location = "mailto:sarmadshakeel20@gmail.com";
-                          e.preventDefault();
-                       }}
+                      onClick={()=>history.push("/officeContact")}
                       >
               
         

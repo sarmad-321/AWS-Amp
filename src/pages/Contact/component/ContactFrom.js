@@ -39,6 +39,7 @@ export const ContactFrom = ({
 	 const [width] = useWindowSize();
 	useEffect(() => {
 		setCurrentSlide(swiper);
+		console.log(contactInfo)
 	}, [swiper]);
   
 

@@ -1,10 +1,12 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
+import { Button, Container, Grid, Typography } from "@material-ui/core";
 import {
     PhoneOutlined,
     MailOutlineOutlined,
     MapOutlined,
     AccessTime,
+    Phone,
+    Mail,
 } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/styles";
 import { IconText } from "../components/IconText/IconText";
@@ -36,40 +38,18 @@ export const ContactBanner = (props) => {
                     <Grid item container direction="column" spacing={1}>
                         <Grid item>
                             <IconText>
-                                <PhoneOutlined /> <span>01733306456</span>
+                                <PhoneOutlined /> <span>07580902000</span>
                             </IconText>
                         </Grid>
                         <Grid item>
                             <IconText>
                                 <MailOutlineOutlined />
-                                <span>contact@ivattselfstorage.co.uk</span>
+                                <span>info@innovationenergyexperts.co.uk</span>
                             </IconText>
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid
-                    item
-                    xs={12}
-                    sm={6}
-                    md={4}
-                    lg={3}
-                    className={`${classes.borderAfter} ${classes.gridContainer}`}
-                >
-                    <Typography variant="h6">Office address</Typography>
-                    <Grid item container direction="column" spacing={1}>
-                        <Grid item>
-                            <IconText>
-                                <MapOutlined />
-                                <span>
-                                   Ivatt Self Storage,Ivatt Way,
-                                    {props.full && <br></br>}
-                                    Westwood, Peterborough, PE3 7PH.
-                                    
-                                </span>
-                            </IconText>
-                        </Grid>
-                    </Grid>
-                </Grid>
+    
                 <Grid
                     item
                     sm={6}
@@ -78,12 +58,13 @@ export const ContactBanner = (props) => {
                     lg={3}
                      className={`${classes.borderAfter} ${classes.gridContainer}`}
                 >
-                    <Typography variant="h6">Store opening time</Typography>
+                    <Typography variant="h6">Coverage Area</Typography>
                     <Grid item container direction="column" spacing={1}>
                         <Grid item>
                             <IconText>
-                                <AccessTime />
-                                <span>Weekdays: 9:00 AM – 5:30 PM <br/> Saturday: 9:00 AM – 2:00 PM </span>                                
+                                {/* <AccessTime /> */}
+                                <MapOutlined/>
+                                <span>Milton Keynes – Bedford <br/> Buckingham – Northampton    <br/> and Surrounding Areas</span>                              
                             </IconText>
                         </Grid>
                     </Grid>
@@ -96,17 +77,19 @@ export const ContactBanner = (props) => {
                     lg={3}
                     className={classes.gridContainer}
                 >
-                    <Typography variant="h6">Storage access times</Typography>
-                    <Grid item container direction="column" spacing={1}>
-                        <Grid item>
-                            <IconText>
-                                <AccessTime />
-                                <span>Weekdays: 8:00 AM – 8:00 PM <br/>
-
-Weekends: 9:00 AM – 6:00 PM</span>
-                            </IconText>
-                        </Grid>
-                    </Grid>
+                    <Typography variant="h6"></Typography>
+                    <Grid item> 
+                   <Button
+           
+                            startIcon={<Mail />}
+                            className={classes.smallBannerSideBtn}
+                            >
+                            <span className={classes.call}>
+                            <a  href='/officeContact' className={classes.call}>Contact Us</a>
+                            </span>
+                           
+                           </Button>
+                </Grid> 
                 </Grid>
             </Grid>
         </div>
@@ -114,8 +97,32 @@ Weekends: 9:00 AM – 6:00 PM</span>
 };
 
 const useStyles = makeStyles((theme) => ({
+    smallBannerSideBtn: {
+        width:182,
+        backgroundColor: theme.palette.button.main,
+        color: "#064D7B",
+        padding: "0.7rem 1.5rem",
+     
+        borderRadius: theme.spacing(1),
+        fontSize: 12,
+        '&:hover': {
+       background: "white",
+       color:"#064D7B"
+    }  },
+    smallBannerCon: {
+        padding:' 0px 34px',
+        [theme.breakpoints.up("md")]: {
+                maxWidth: "1170px",
+        },
+        
+    },
+    call: {
+        fontWeight: 'bold',
+        color: '#064d7b',
+        textDecoration: 'none',
+    },
     banner: {
-        background: "#064D7B",
+        background: theme.palette.primary.main,
         // borderRadius: "12px",
         color: "white",
     },

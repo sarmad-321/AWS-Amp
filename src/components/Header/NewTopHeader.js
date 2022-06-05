@@ -16,8 +16,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState, useEffect } from "react";
 import { Link, useHistory, useLocation } from "react-router-dom";
 
-import LogoBlue   from "../../assets/Icons/logoDark.png";
-import Logo from "../../assets/Icons/logoLight.png";
+import LogoBlue   from "../../assets/Icons/Logo-Blue.png";
+import Logo from "../../assets/Icons/Logo-White.png";
 import { Phone } from "@material-ui/icons";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import { border, borderRadius } from "@material-ui/system";
@@ -176,7 +176,7 @@ export default function NewTopHeader({
 	const femmecubatorLogo = (
 		<img
 			src={headercolor === "white" ? LogoBlue : Logo}
-			style={{ width: "124.92px", height: "54.38px", cursor: "pointer" }}
+			style={{ width: "90.92px", height: "64.38px", cursor: "pointer" }}
 			alt="Ivett Storage"
 			onClick={() => {
 				setActive(null);
@@ -253,10 +253,7 @@ const headersData = [
 		label: "Business",
 		href: "/quote",
 	},
-	{
-		label: "Box Shop",
-		href: "/materials",
-	},
+
 	// {
 	// 	label: "Removals",
 	// 	href: "/parking",

@@ -176,7 +176,7 @@ export default function TopHeader() {
                 className={header}
                 position="static"
                 elevation={0}
-                className={appBar}
+             
             >
                 {mobileView ? displayMobile() : displayDesktop()}
             </AppBar>

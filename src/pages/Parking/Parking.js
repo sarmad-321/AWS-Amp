@@ -13,7 +13,7 @@ export const Parking = ({ setShowHeader,setHeaderColor }) => {
 
     return (
         <>
-            <Box component="section" style={{backgroundColor:'#064D7B'}}>
+            <Box component="section" style={{backgroundColor: "#003c1a"}}>
                 <ParkingHeading  />
             </Box>
             <Box component="section">

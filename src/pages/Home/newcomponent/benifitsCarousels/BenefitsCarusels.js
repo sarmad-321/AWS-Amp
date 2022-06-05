@@ -174,6 +174,8 @@ const useStyles = makeStyles((theme) => ({
     },
     iconsize:{
         height:50,
+       
+        // width:130
     },
     benefitsHeading: {
         paddingTop:'3rem',

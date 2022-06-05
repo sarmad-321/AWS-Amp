@@ -141,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	sendMessage: {
-		textAlign: "center",
+		// textAlign: "center",
 		color: "#77838F",
 		padding: "1rem 0",
 	},

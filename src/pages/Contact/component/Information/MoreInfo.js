@@ -34,8 +34,9 @@ const [open, setOpen] = React.useState(false);
 		setContactInfo({ ...contactInfo, [props]: event.target.value });
 	};
 	const handleClick = (e) => {
-		
-		if (contactInfo.name == "Name" || contactInfo.subname === "subname") {
+
+
+		if (contactInfo.name == "Name" ) {
 		e.preventDefault()
 			return handleClickOpen()
 		}
@@ -57,7 +58,7 @@ const [open, setOpen] = React.useState(false);
 						placeholder="Name"
 						required
 						variant="outlined"
-						onChange={handleChange("phone")}
+						onChange={handleChange("name")}
 						autoComplete={false}
 					/>
 				</Grid>

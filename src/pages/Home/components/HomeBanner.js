@@ -84,7 +84,7 @@ export const HomeBanner = ({ selectedSearch, handleSelectedChange }) => {
                             variant="outlined"
                             startIcon={<PhoneOutlined />}
                         >
-                            01733306456
+                            07580902000
                         </ButtonCV>
                     </Grid>
                 </Grid>

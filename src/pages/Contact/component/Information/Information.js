@@ -47,12 +47,13 @@ export const Information = ({ contactInfo, setContactInfo }) => {
     const [width] = useWindowSize();
 	const handleChange = (props) => (event) => {
 		setContactInfo({ ...contactInfo, [props]: event.target.value });
+		console.log(event.target.value)
 	};
 
-	const handleClick = (props) => {
-		setSelected(props.id);
-		setContactInfo({ ...contactInfo, ["nameTitle"]: props.beforeName });
-	};
+	// const handleClick = (props) => {
+	// 	setSelected(props.id);
+	// 	setContactInfo({ ...contactInfo, ["nameTitle"]: props.beforeName });
+	// };
 
 	return (
 		<Grid
@@ -77,7 +78,7 @@ export const Information = ({ contactInfo, setContactInfo }) => {
 							variant="outlined"
 							color="primary"
 							required
-							onChange={handleChange("name")}
+							onChange={handleChange("Bedrooms")}
 						/>
 					</Grid>
 

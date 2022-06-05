@@ -22,7 +22,7 @@ export const AirPressure = ({ setShowHeader,setHeaderColor }) => {
 
     return (
         <>
-            <Box component="section" style={{backgroundColor:'#0f833a'}}>
+            <Box component="section" className={classes.infoContainer}>
             <Container maxWidth="lg">
             <Typography
                 variant="h4"
@@ -32,23 +32,7 @@ export const AirPressure = ({ setShowHeader,setHeaderColor }) => {
             >
                 Our Air Pressure Testing
             </Typography>
-           
-            <Typography
-                color="textSecondary"
-                className={classes.textBold}
-                paragraph
-            >
-                Give us a call to book your Air pressure service
-            </Typography>
-            <Button
-                startIcon={<Phone />}
-                color="secondary"
-                className={classes.borderBtn}
-            >
-               <a href='tel:01733306456' className={classes.dialer}>
-							01733306456
-							</a>
-            </Button>
+
         </Container>
             </Box>
             <Box component="section">
@@ -162,8 +146,11 @@ Building Regulations Part L1A for new dwellings and Part L2A for new buildings o
 const useStyles = makeStyles((theme) => ({
     
     
-    infoContainer: {},
-    infoTopHeading: {
+    
+    infoContainer: {
+        backgroundColor : theme.palette.primary.main
+
+    },    infoTopHeading: {
         fontWeight: "bold",
     },
     infoHeading: {

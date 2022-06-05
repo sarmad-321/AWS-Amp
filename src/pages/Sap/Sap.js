@@ -22,7 +22,7 @@ export const Sap = ({ setShowHeader,setHeaderColor }) => {
 
     return (
         <>
-            <Box component="section" style={{backgroundColor:'#064D7B'}}>
+            <Box component="section" className={classes.infoContainer}>
             <Container maxWidth="lg">
             <Typography
                 variant="h4"
@@ -33,29 +33,14 @@ export const Sap = ({ setShowHeader,setHeaderColor }) => {
                 SAP Assessment (EPC for New Building)  
             </Typography>
            
-            <Typography
-                color="textSecondary"
-                className={classes.textBold}
-                paragraph
-            >
-                Give us a call to book your Air pressure service
-            </Typography>
-            <Button
-                startIcon={<Phone />}
-                color="secondary"
-                className={classes.borderBtn}
-            >
-               <a href='tel:01733306456' className={classes.dialer}>
-							01733306456
-							</a>
-            </Button>
+
         </Container>
             </Box>
             <Box component="section">
             <Container maxWidth="lg">
             <Grid container justify="center" alignItems="center">
                 <Grid item xs={12} sm={12} md={5}>
-                    <Grid container className={classes.infoContainer}>
+                    <Grid container>
                         <Avatar
                             variant="square"
                             className={classes.image}
@@ -85,71 +70,7 @@ SAP calculations are used to demonstrate compliance with building regulations. P
 
                             </Typography>
                         </Grid>
-                        {/* <Grid item>
-                            <Typography
-                                variant="subtitle2"
-                                color="primary"
-                                className={classes.infoTopHeading}
-                            >
-                                Choose us
-                            </Typography>
-                            <Typography
-                                variant="h4"
-                                color="primary"
-                                className={classes.infoHeading}
-                                paragraph
-                            >
-                                Why to choose us
-                            </Typography>
-                        </Grid>
-                        <Grid item>
-                            <Avatar
-                                variant="circle"
-                                className={classes.icon}
-                                paragraph
-                            >
-                                <VoiceChatIcon />
-                            </Avatar>
-                            <Typography
-                                variant="h5"
-                                color="textSecondary"
-                                className={classes.iconHeading}
-                                gutterBottom
-                            >
-                                24 hours CCTV security
-                            </Typography>
-                            <Typography
-                                variant="body2"
-                                className={classes.iconPara}
-                            >
-                                Fusce placerat pretium mauris, vel sollicitudin
-                                elit lacinia vitae. Quisque sit amet nisi erat.
-                            </Typography>
-                        </Grid>
-                        <Grid item>
-                            <Avatar
-                                variant="circle"
-                                className={classes.icon}
-                                paragraph
-                            >
-                                <VoiceChatIcon />
-                            </Avatar>
-                            <Typography
-                                variant="h5"
-                                color="textSecondary"
-                                className={classes.iconHeading}
-                                gutterBottom
-                            >
-                                Staff on site 7 days a week
-                            </Typography>
-                            <Typography
-                                variant="body2"
-                                className={classes.iconPara}
-                            >
-                                Fusce placerat pretium mauris, vel sollicitudin
-                                elit lacinia vitae. Quisque sit amet nisi erat.
-                            </Typography>
-                        </Grid> */}
+
                     </Grid>
                 </Grid>
             </Grid>
@@ -164,7 +85,10 @@ SAP calculations are used to demonstrate compliance with building regulations. P
 const useStyles = makeStyles((theme) => ({
     
     
-    infoContainer: {},
+    infoContainer: {
+        backgroundColor : theme.palette.primary.main
+
+    },
     infoTopHeading: {
         fontWeight: "bold",
     },
@@ -174,6 +98,7 @@ const useStyles = makeStyles((theme) => ({
 		// 	fontSize: 14
 		// },
     },
+
     image: {
         width: "100%",
         height: "100%",

@@ -11,6 +11,7 @@ import addressMap from "../../assets/images/map.jpg"
 import ArrowForwardOutlinedIcon from "@material-ui/icons/ArrowForwardOutlined";
 import TextField from '@material-ui/core/TextField';
 import { padding } from "@mui/system";
+import { baseUrl } from "../../services/email";
 
 const axios = require("axios");
 
@@ -90,19 +91,19 @@ export const OfficeContact = (props) => {
 
     alert("Sumbitted")
 
-    // axios
-    //   .post("https://ivatt-backend.herokuapp.com/register", {
-    //     user_name: user_name,
-    //     email: email,
-    //     message: message,
-    //   })
-    //   .then(function (response) {
-    //     history.push("/");
-    //     window.location.reload();
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
+    axios
+      .post( baseUrl +"/sendEmail", {
+        user_name: user_name,
+        email: email,
+        message: message,
+      })
+      .then(function (response) {
+        history.push("/");
+        window.location.reload();
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
   const handleGoogleMap = () => {
 
@@ -139,48 +140,7 @@ export const OfficeContact = (props) => {
          */}
         
         <Grid container spacing={1} spacing-sm-2 className={classes.officePicContainer}>
-         
-          <Grid item sm={7} md={7} lg={7} spacing={1} className={classes.officeFirstCon}>
-            <Grid item className={classes.officeTopImage}>
-               <img 
-                  src={addressMap}
-                   alt="image"
-                 className={classes.largegoogle}
-              />
-              <div style={{ display: 'flex', justifyContent: 'center', position: 'absolute', bottom: 0, }}>
-               <a style={{textDecoration: 'none'}} href="https://www.google.com/maps/place/Ivatt+Self+Storage/@52.5940669,-0.2666513,17.4z/data=!4m5!3m4!1s0x4877f17c604c2037:0xed286a650df39830!8m2!3d52.5943127!4d-0.2650843" target="_blank">
-                 <Button
-                  onClick={handleGoogleMap }
-                            endIcon={
-                                        <ArrowForwardOutlinedIcon fontSize="large" />
-                                    }
-                            className={classes.imageButton}
-                  >
-                 View on maps
-                </Button>
-                </a>
-                
-                </div>
-            </Grid>
-            {/* <Grid item className={classes.officeBottomImage}>
-              <div className="imageForButton">
-              <Button
-                            endIcon={
-                                        <ArrowForwardOutlinedIcon fontSize="large" />
-                                    }
-                            className={classes.imageButton}
-                  >
-                 View on maps
-                </Button>
-              <img
-                  src={building}
-                   alt=""
-                  className={classes.avatarLarge}
-                />
-                </div>
-            </Grid> */}
-            
-          </Grid>
+
           <Grid item spacing={0} xs={12} sm={12} md={5} lg={5}  className={classes.formContainer}>
             <Grid container className={classes.peterBourough} >
               <Typography
@@ -243,13 +203,13 @@ export const OfficeContact = (props) => {
         
         <Grid item xs={12} sm={12}>
            <TextField
-          //  onChange={(e) => setMsg(e.target.value)}             
+           onChange={(e) => setMsg(e.target.value)}             
           size={width < 960 ? "small" : 'big'}
           id="outlined-multiline-static"
           label="Message"
           multiline
           rows={4}
-          defaultValue="Type a message"
+          placeholder = "Type a message..."
           variant="outlined"
           style={{width:'98%'}}
            InputLabelProps={{

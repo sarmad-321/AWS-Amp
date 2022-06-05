@@ -23,22 +23,7 @@ export const ParkingHeading = () => {
                 Our Sound Testing Service
             </Typography>
            
-            <Typography
-                color="textSecondary"
-                className={classes.textBold}
-                paragraph
-            >
-                Give us a call to book your sound testing services
-            </Typography>
-            <Button
-                startIcon={<Phone />}
-                color="secondary"
-                className={classes.borderBtn}
-            >
-               <a href='tel:01733306456' className={classes.dialer}>
-							01733306456
-							</a>
-            </Button>
+
         </Container>
     );
 };

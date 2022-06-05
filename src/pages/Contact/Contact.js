@@ -22,6 +22,7 @@ import NewTopHeader from "../../components/Header/NewTopHeader";
 import { Alert } from "@mui/material";
 
 export const Contact = ({
+	
 	setShowHeader,
 	setHeaderColor,
 	headercolor,
@@ -39,6 +40,7 @@ export const Contact = ({
 	);
 console.log(' slide number',slideNo)
 
+
 	const [currentSlide, setCurrentSlide] = useState(1);
 	const [width] = useWindowSize();
 	setShowHeader(false);
@@ -48,9 +50,11 @@ console.log(' slide number',slideNo)
 	const FormData = {
 		startDate: "",
 		duration: {label : "1 week" , value : 1},
-		type: headerContext ? headerContext.name : Data.name || "Business",
+		type:"EPC",
 		typeId: headerContext ? headerContext.id : Data.id || 1,
-		size: {label : "25sqft" , value : 7.99},
+		"Property Type" : {label : "House" , value : 1},
+		// size: {label : "25sqft" , value : 7.99},
+		"address" : "undefined",
 		email: "",
 		nameTitle: "Mr ",
 		name: "Name",
@@ -70,6 +74,9 @@ console.log(' slide number',slideNo)
 		setSlideNo(1);
 		// history.push("/");
 	};
+
+
+// Look ma, no error!
 	// setHeaderContext((prevState) => ({
 	// 	...prevState,
 	// 	id: 1,
@@ -161,8 +168,8 @@ console.log(' slide number',slideNo)
 							startIcon={<Phone />}
 							className={classes.rightSideBtn}
 						>
-							<a href='tel:01733306456' className={classes.dialer}>
-							01733306456
+							<a href='tel:07580902000' className={classes.dialer}>
+							07580902000
 							</a>
 						</Button>
 					</Grid>

@@ -25,8 +25,8 @@ export const MaterialHeading = () => {
                 packing accessories.
             </Typography>
             <Button className={classes.btnContact} startIcon={<Phone />}>
-               <a href='tel:01733306456' className={classes.dialer}>
-							01733306456
+               <a href='tel:07580902000' className={classes.dialer}>
+							07580902000
 				</a>
             </Button>
         </Container>

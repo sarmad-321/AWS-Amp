@@ -21,7 +21,7 @@ export const ChoseUs = () => {
         <Container maxWidth="lg">
             <Grid container justify="center" alignItems="center">
                 <Grid item xs={12} sm={12} md={5}>
-                    <Grid container className={classes.infoContainer}>
+                    <Grid container >
                         <Avatar
                             variant="square"
                             className={classes.image}
@@ -120,7 +120,12 @@ When a new construction or the conversion of an existing construction results in
 };
 
 const useStyles = makeStyles((theme) => ({
-    infoContainer: {},
+    
+    infoContainer: {
+        backgroundColor : theme.palette.primary.main
+
+    },  
+    
     infoTopHeading: {
         fontWeight: "bold",
     },

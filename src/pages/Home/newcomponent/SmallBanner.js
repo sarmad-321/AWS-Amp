@@ -114,7 +114,7 @@ export const SmallBanner = () => {
                             className={classes.smallBannerSideBtn}
                             >
                             <span className={classes.call}>
-                            <a  href='tel:01733306456' className={classes.call}>01733306456</a>
+                            <a  href='tel:07580902000' className={classes.call}>07580902000</a>
                             </span>
                            
                            </Button>

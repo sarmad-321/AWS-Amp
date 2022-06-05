@@ -25,57 +25,63 @@ import off from "../../../assets/images/off.svg";
 import Building from "../../../assets/Icons/office-building.svg";
 import Home from "../../../assets/Icons/home.svg";
 import Graduated from "../../../assets/Icons/graduated.svg";
+import { sendQuote } from "../../../services/email";
 
 const axios = require("axios");
 
 export const ContactFormDetails = ({ contactInfo }) => {
+	useEffect(() => {
+		// setCurrentSlide(swiper);
+		handleSubmit()
+		console.log(formData)
+	}, []);
 	const [button, setButton] = useState(true);
 	const formData ={
 		startDate: contactInfo.startDate,
-		duration: contactInfo.duration.label,
-		size: contactInfo.size.label,
+		PropertyType: contactInfo?.duration?.label,
+		size: contactInfo?.size?.label,
 		email: contactInfo.email,
-		nameTitle: contactInfo.nameTitle,
 		name: contactInfo.name,
-		subname:contactInfo.subname,
 		phone: contactInfo.phone,
+		address: contactInfo.address
 
 	}
     
-console.log(formData)
+console.log(contactInfo)
 	const classes = useStyles();
 	const history = useHistory();
 
 	const handleClick = () => {
 		history.push("/");
 	};
-  const handleSubmit = (e) => {
-    e.preventDefault();
-	  let email = contactInfo.email;
-   axios
-      .post("https://ivatt-backend.herokuapp.com/tabular", {
-       
-        email: email,
-        message: formData,
-      })
-      .then(function (response) {
-		  setButton(false)
-        window.location.reload();
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+  const handleSubmit = () => {
+	let email = contactInfo.email;
+
+	let data = {
+		email : email,
+		bedrooms: contactInfo["Bedrooms"] ,
+		propertyType: contactInfo["Property Type"].label,
+		address: contactInfo["address"],
+		name: contactInfo.name,
+		phone:contactInfo.phone,
+		type : contactInfo.type,
+		address: contactInfo.address
+
+	}
+	// console.log()
+	sendQuote(data)
+	
   };
 	
 	return (
 		<Container className={classes.paddingBottom}>
-			{/* <Button
+			<Button
 				startIcon={<ArrowBackIosRounded />}
 				onClick={handleClick}
 				className={classes.backButton}
 			>
 				Back
-			</Button> */}
+			</Button>
 			<Typography
 				variant="h4"
 				color="primary"
@@ -83,8 +89,7 @@ console.log(formData)
 				paragraph
 			>
 				Hi {contactInfo.nameTitle} {contactInfo.name}{" "}
-				{contactInfo.subname && contactInfo.subname},here is your quote for,{" "}
-				{contactInfo.size.label} room at Ivatt Way Peterborough.
+				, Thanks for reaching us. you will recieve the quote in your email soon.
 				
 				
 			</Typography>
@@ -106,139 +111,14 @@ console.log(formData)
 								variant="h4"
 								className={classes.cardHeadingTwo}
 							>
-								{contactInfo.size.label}
+								{contactInfo["Property Type"].label}
 							</Typography>
 						</CardContent>
 					</Card>
 				</Grid>
 
-				<Grid item xs={12} sm={6} md={3}>
-					{/* change image */}
-					<img
-						src={off}
-						alt={contactInfo.type}
-						className={classes.offprice}
-							/>
-					{/* <Card
-						className={`${classes.cardClass} selected `}
-					>
-						<CardContent className={classes.cardContent}>
-							<img
-								src={Building}
-								alt={contactInfo.type}
-								className={classes.cardIcon}
-							/>
-							<Typography variant="subtitle1" paragraph>
-								{contactInfo.type}
-							</Typography>
-							<Typography
-								variant="h4"
-								className={classes.cardHeadingTwo}
-							>
-								{contactInfo.size.label}
-							</Typography>
-						</CardContent>
-					</Card> */}
-				</Grid>
+
 				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<Grid
-					item
-					xs={12}
-					sm={6}
-					md={4}
-					lg={5}
-					className={classes.detailedGrid}
-				>
-					<Grid container justify="center" spacing={0}>
-						<Grid item xs={6}  className={classes.bordeRight}>
-							<Typography className={classes.xsFont} color="primary">
-								Standard Price
-							</Typography>
-							<Typography
-								gutterBottom
-								color="primary"
-								className={[classes.contactInfoHeading , classes.lineCut]}
-							>
-								£{	(contactInfo.size.value)}
-							</Typography>
-							<Typography color="primary" className={[classes.alignRight , classes.paddingTag]}>
-								Per Week
-							</Typography>
-							
-						</Grid>
-						<Grid item xs={6} className={classes.leftStandard}>
-							<Typography className={classes.xsFont} color="primary">
-								
-								Discounted Price
-							</Typography>
-							<Typography
-								color="primary"
-								gutterBottom
-								className={classes.contactInfoHeading}
-							>
-								{/* £{
-									contactInfo.duration.value <= 8 ?
-									parseFloat( (contactInfo.size.value * contactInfo.duration.value)/2).toFixed(2) :
-								parseFloat(contactInfo.size.value * contactInfo.duration.value) - ((contactInfo.size.value *8)/2 ).toFixed()
-								
-								} */}
-								
-									£{
-									parseFloat( (contactInfo.size.value )/2 - 0.01 ).toFixed(2) 
-
-									} 
-								
-							</Typography>
-							<Typography color="primary" className={classes.alignRight}>
-								per week
-							</Typography>
-						</Grid>
-						
-						<Grid item xs={12}>
-							{button ?<Button
-								variant="contained"
-								color="secondary"
-								fullWidth={true}
-								endIcon={<ArrowForward />}
-								className={classes.reserveButton}
-								onClick={handleSubmit}
-							>
-								Reserve Now
-							</Button> :
-								<Button
-								variant="contained"
-								color="secondary"
-								fullWidth={true}
-								endIcon={<ArrowForward />}
-								className={classes.reserveButton2}
-							>
-								Thanks! we will get back to you soon
-							</Button>
-							}
-							
-							<Typography
-								color="primary"
-								className={classes.noteText}
-							>
-								Price excludes insurance and padlock
-							</Typography>
-						</Grid>
-					</Grid>
-				</Grid>
 				{/* <Grid item xs={12} sm={4} md={4}>
 					<Grid container>
 						<Grid item xs={3} className={classes.iconGrid}>
