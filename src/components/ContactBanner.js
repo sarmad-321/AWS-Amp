@@ -10,9 +10,13 @@ import {
 } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/styles";
 import { IconText } from "../components/IconText/IconText";
+import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
 
 export const ContactBanner = (props) => {
     const classes = useStyles();
+    const history = useHistory();
 
     return (
         <div>
@@ -28,10 +32,10 @@ export const ContactBanner = (props) => {
             >
                 <Grid
                     item
-                    sm={6}
+                    sm={7}
                     xs={12}
                     md={4}
-                    lg={3}
+                    lg={4}
                     className={`${classes.borderAfter} ${classes.gridContainer}`}
                 >
                     <Typography variant="h6">Get in touch</Typography>
@@ -78,6 +82,12 @@ export const ContactBanner = (props) => {
                     className={classes.gridContainer}
                 >
                     <Typography variant="h6"></Typography>
+                    <Link
+                        to='#'
+                        style={{textDecoration:' none'}}
+                      onClick={()=>history.push("/officeContact")}
+                      >
+              
                     <Grid item> 
                    <Button
            
@@ -85,11 +95,13 @@ export const ContactBanner = (props) => {
                             className={classes.smallBannerSideBtn}
                             >
                             <span className={classes.call}>
-                            <a  href='/officeContact' className={classes.call}>Contact Us</a>
+                            <a className={classes.call}>Contact Us</a>
                             </span>
                            
                            </Button>
+                           
                 </Grid> 
+                </Link>
                 </Grid>
             </Grid>
         </div>

@@ -94,10 +94,13 @@ export const ContactFrom = ({
 						setFormSubmited={setFormSubmited}
 					/>
 				</SwiperSlide>
-				<div>
-				<div className="swiper-button-prev" style={{fontFamily:'inter'}}>Back</div>
-				<div className="swiper-button-next" style={{fontFamily:'inter'}}>Next</div>
-				</div>
+			{
+				swiper <4 &&
+					<div>
+					<div className="swiper-button-prev" style={{fontFamily:'inter'}}>Back</div>
+					<div className="swiper-button-next" style={{fontFamily:'inter'}}>Next</div>
+					</div>
+			}
 				 {/* <ArrowBackIcon className="swiper-button-prev" /> */}
                 {/* <ArrowForwardIcon className="swiper-button-next" /> */}
 			

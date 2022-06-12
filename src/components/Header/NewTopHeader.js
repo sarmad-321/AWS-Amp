@@ -100,18 +100,9 @@ export default function NewTopHeader({
 						<Grid item xs={8} lg={8} className={menuItemsMId}>
 							<div className={dash}>{getMenuButtons()}</div>
 						</Grid>
-						{!hideQuoteButton && (
-							<Grid item xs={2} lg={2} className={flex}>
-								<img src={headercolor === "white" ? review : reviewLight} alt="" />
-								{/* <Button
-									startIcon={<Phone />}
-									className={headerSideBtn}
-									onClick={() => {history.push("/quote");}}
-								>
-									GET A QUOTE
-								</Button> */}
-							</Grid>
-						)}
+					
+					
+						
 					</Grid>
 				</Toolbar>
 			</Container>

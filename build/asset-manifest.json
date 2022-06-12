@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.a87fa6ae.chunk.css",
-    "main.js": "/static/js/main.cbaf7bee.chunk.js",
-    "main.js.map": "/static/js/main.cbaf7bee.chunk.js.map",
+    "main.js": "/static/js/main.73432cdb.chunk.js",
+    "main.js.map": "/static/js/main.73432cdb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.afb35b37.js",
     "runtime-main.js.map": "/static/js/runtime-main.afb35b37.js.map",
     "static/css/2.57102917.chunk.css": "/static/css/2.57102917.chunk.css",
-    "static/js/2.554647e7.chunk.js": "/static/js/2.554647e7.chunk.js",
-    "static/js/2.554647e7.chunk.js.map": "/static/js/2.554647e7.chunk.js.map",
+    "static/js/2.ff0eae94.chunk.js": "/static/js/2.ff0eae94.chunk.js",
+    "static/js/2.ff0eae94.chunk.js.map": "/static/js/2.ff0eae94.chunk.js.map",
     "static/js/3.fdf4cc52.chunk.js": "/static/js/3.fdf4cc52.chunk.js",
     "static/js/3.fdf4cc52.chunk.js.map": "/static/js/3.fdf4cc52.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.57102917.chunk.css.map": "/static/css/2.57102917.chunk.css.map",
     "static/css/main.a87fa6ae.chunk.css.map": "/static/css/main.a87fa6ae.chunk.css.map",
-    "static/js/2.554647e7.chunk.js.LICENSE.txt": "/static/js/2.554647e7.chunk.js.LICENSE.txt",
+    "static/js/2.ff0eae94.chunk.js.LICENSE.txt": "/static/js/2.ff0eae94.chunk.js.LICENSE.txt",
     "static/media/1.41925139.svg": "/static/media/1.41925139.svg",
     "static/media/2.77ac4bb8.png": "/static/media/2.77ac4bb8.png",
     "static/media/2.d95717d4.svg": "/static/media/2.d95717d4.svg",
@@ -31,6 +31,8 @@
     "static/media/Benefit.46366808.svg": "/static/media/Benefit.46366808.svg",
     "static/media/BenifitOne.45795129.svg": "/static/media/BenifitOne.45795129.svg",
     "static/media/Family.686eb8f4.mp4": "/static/media/Family.686eb8f4.mp4",
+    "static/media/Logo-Blue.18879638.png": "/static/media/Logo-Blue.18879638.png",
+    "static/media/Logo-White.054fc01d.png": "/static/media/Logo-White.054fc01d.png",
     "static/media/Rectangle.d19535e6.svg": "/static/media/Rectangle.d19535e6.svg",
     "static/media/SAP.9f037d19.jpg": "/static/media/SAP.9f037d19.jpg",
     "static/media/Soundtesting.93ada70d.jpg": "/static/media/Soundtesting.93ada70d.jpg",
@@ -102,8 +104,8 @@
   "entrypoints": [
     "static/js/runtime-main.afb35b37.js",
     "static/css/2.57102917.chunk.css",
-    "static/js/2.554647e7.chunk.js",
+    "static/js/2.ff0eae94.chunk.js",
     "static/css/main.a87fa6ae.chunk.css",
-    "static/js/main.cbaf7bee.chunk.js"
+    "static/js/main.73432cdb.chunk.js"
   ]
 }

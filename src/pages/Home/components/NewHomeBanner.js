@@ -110,7 +110,7 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
                             className={classes.heading}
                         >
                             
-                           Innovation <br/> <span style={{fontWeight:'normal'}}>Energy Expert</span> 
+                           Innovation <br/> <span style={{fontWeight:'normal'}}>Energy Experts</span> 
                            <br />
                            <p style={{fontSize : 14}}>Sustainable Energy Use</p>
                         </Typography>
