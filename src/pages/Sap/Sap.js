@@ -1,160 +1,147 @@
 import React from "react";
 // Common components
 import {
-    Container,
-    Grid,
-    makeStyles,
-    Avatar,
-    Typography,
-    Button,
+  Container,
+  Grid,
+  makeStyles,
+  Avatar,
+  Typography,
+  Button,
 } from "@material-ui/core";
 
 import { Phone } from "@material-ui/icons";
 // Common Component
 import { Box } from "@material-ui/core";
-import epcImage from '../../assets/images/epcimage.png'
-import sap from '../../assets/images/SAP.jpg'
+import epcImage from "../../assets/images/epcimage.png";
+import sap from "../../assets/images/SAP.jpg";
 
-export const Sap = ({ setShowHeader,setHeaderColor }) => {
-    setShowHeader(true);
-    setHeaderColor('primary')
-    const classes = useStyles();
+export const Sap = ({ setShowHeader, setHeaderColor }) => {
+  setShowHeader(true);
+  setHeaderColor("primary");
+  const classes = useStyles();
 
-    return (
-        <>
-            <Box component="section" className={classes.infoContainer}>
-            <Container maxWidth="lg">
-            <Typography
-                variant="h4"
-                color="primary"
-                className={classes.heading}
-                gutterBottom
-            >
-                SAP Assessment (EPC for New Building)  
-            </Typography>
-           
-
+  return (
+    <>
+      <Box component="section" className={classes.infoContainer}>
+        <Container maxWidth="lg">
+          <Typography
+            variant="h4"
+            color="primary"
+            className={classes.heading}
+            gutterBottom
+          >
+            SAP Assessment (EPC for New Building)
+          </Typography>
         </Container>
-            </Box>
-            <Box component="section">
-            <Container maxWidth="lg">
-            <Grid container justify="center" alignItems="center">
-                <Grid item xs={12} sm={12} md={5}>
-                    <Grid container>
-                        <Avatar
-                            variant="square"
-                            className={classes.image}
-                            src={sap}
-                        />
-                    </Grid>
-                </Grid>
-                <Grid
-                    item
-                    xs={12}
-                    sm={12}
-                    md={7}
-                    className={classes.infoGridRight}
-                >
-                    <Grid container direction="column" spacing={3}>
-                        <Grid item>
-                             <Typography
-                                variant="body2"
-                                className={classes.iconPara}
-                            >
-                The Standard Assessment Procedure (SAP) is the methodology for assessing and comparing the energy and environmental performance of dwellings. Its purpose is to provide accurate and reliable assessments of dwelling energy performances that are needed to underpin energy and environmental policy initiatives. 
-
-SAP works by assessing how much energy a dwelling will consume and how much carbon dioxide (CO2 ) will be emitted in delivering a defined level of comfort and service provision, based on standardised occupancy conditions. This enables a like for like comparison of dwelling performance. 
-
-SAP calculations are used to demonstrate compliance with building regulations. Part L1A is the document by which new dwellings are assessed and Part L1B, which is less stringent, is used for existing dwellings. 
-
-
-                            </Typography>
-                        </Grid>
-
-                    </Grid>
-                </Grid>
+      </Box>
+      <Box component="section">
+        <Container maxWidth="lg">
+          <Grid container justify="center" alignItems="center">
+            <Grid item xs={12} sm={12} md={5}>
+              <Grid container>
+                <Avatar variant="square" className={classes.image} src={sap} />
+              </Grid>
             </Grid>
+            <Grid item xs={12} sm={12} md={7} className={classes.infoGridRight}>
+              <Grid container direction="column" spacing={3}>
+                <Grid item>
+                  <Typography variant="body2" className={classes.iconPara}>
+                    Innovation Energy Experts provides SAP Assessment for a new
+                    development. The Standard Assessment Procedure (SAP) is the
+                    methodology for assessing and comparing the energy and
+                    environmental performance of dwellings. Its purpose is to
+                    provide accurate and reliable assessments of dwelling energy
+                    performances that are needed to underpin energy and
+                    environmental policy initiatives. SAP works by assessing how
+                    much energy a dwelling will consume and how much carbon
+                    dioxide (CO2 ) will be emitted in delivering a defined level
+                    of comfort and service provision, based on standardised
+                    occupancy conditions. This enables a like for like
+                    comparison of dwelling performance. SAP calculations are
+                    used to demonstrate compliance with building regulations.
+                    Part L1A is the document by which new dwellings are assessed
+                    and Part L1B, which is less stringent, is used for existing
+                    dwellings.
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
         </Container>
-            </Box>
-        
-        </>
-    );
+      </Box>
+    </>
+  );
 };
 
-
 const useStyles = makeStyles((theme) => ({
-    
-    
-    infoContainer: {
-        backgroundColor : theme.palette.primary.main
+  infoContainer: {
+    backgroundColor: theme.palette.primary.main,
+  },
+  infoTopHeading: {
+    fontWeight: "bold",
+  },
+  infoHeading: {
+    fontWeight: "900",
+    // [theme.breakpoints.down("sm")]: {
+    // 	fontSize: 14
+    // },
+  },
 
+  image: {
+    width: "100%",
+    height: "100%",
+    position: "relative",
+  },
+  icon: {
+    background: "#064D7B",
+    width: theme.spacing(8),
+    height: theme.spacing(8),
+    marginBottom: theme.spacing(2),
+  },
+  iconHeading: {
+    fontWeight: "bold",
+  },
+  infoGridRight: {
+    padding: theme.spacing(6),
+    [theme.breakpoints.down("xs")]: {
+      padding: theme.spacing(0),
     },
-    infoTopHeading: {
-        fontWeight: "bold",
+  },
+  iconPara: {
+    lineHeight: "2",
+    color: "#58595B",
+    fontSize: theme.spacing(2),
+  },
+  heading: {
+    fontWeight: "900",
+    color: theme.palette.secondary.contrastText,
+  },
+  para: {
+    color: theme.palette.primary.contrastText,
+  },
+  dialer: {
+    textDecoration: "none",
+    color: "#064D7B",
+  },
+  para70: {
+    textTransform: "capitalize !imporatnt",
+    width: "70%",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
     },
-    infoHeading: {
-        fontWeight: "900",
-        // [theme.breakpoints.down("sm")]: {
-		// 	fontSize: 14
-		// },
+  },
+  textBold: {
+    fontWeight: "bold",
+    color: theme.palette.primary.contrastText,
+  },
+  borderBtn: {
+    // border: "1px solid #A21EB0",
+    color: " #064D7B",
+    background: " #FFD300",
+    minWidth: 150,
+    "&:hover": {
+      background: "white",
+      color: "#064D7B",
     },
-
-    image: {
-        width: "100%",
-        height: "100%",
-        position: "relative",
-    },
-    icon: {
-        background: "#064D7B",
-        width: theme.spacing(8),
-        height: theme.spacing(8),
-        marginBottom: theme.spacing(2),
-    },
-    iconHeading: {
-        fontWeight: "bold",
-    },
-    infoGridRight: {
-        padding: theme.spacing(6),
-        [theme.breakpoints.down("xs")]: {
-            padding: theme.spacing(0),
-        },
-    },
-    iconPara: {
-        lineHeight: "2",
-        color: "#58595B",
-        fontSize: theme.spacing(2),
-    },
-    heading: {
-        fontWeight: "900",
-         color: theme.palette.secondary.contrastText,
-    },
-     para: {
-        color: theme.palette.primary.contrastText,
-    },
-     dialer: {
-		textDecoration: 'none',
-		color:'#064D7B',
-	},
-    para70: {
-        textTransform:'capitalize !imporatnt',
-        width: "70%",
-         [theme.breakpoints.down("sm")]: {
-            width: "100%",
-        },
-    },
-    textBold: {
-        fontWeight: "bold",
-        color: theme.palette.primary.contrastText,
-    },
-    borderBtn: {
-        // border: "1px solid #A21EB0", 
-        color: ' #064D7B',
-        background: ' #FFD300',
-        minWidth: 150,
-        '&:hover': {
-       background: "white",
-       color:"#064D7B"
-        },
-    }
+  },
 }));
-
