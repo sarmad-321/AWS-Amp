@@ -105,10 +105,8 @@ export const NewHomeBanner = ({ selectedSearch, handleSelectedChange }) => {
                 color="primary"
                 className={classes.heading}
               >
-                Energy Performance <br />{" "}
-                <span style={{ fontWeight: "normal" }}>
-                  Certificate in UK | Air Pressure Test
-                </span>
+                Innovation <br />{" "}
+                <span style={{ fontWeight: "normal" }}>Energy Experts</span>
                 <br />
                 <p style={{ fontSize: 14 }}>Sustainable Energy Use</p>
               </Typography>

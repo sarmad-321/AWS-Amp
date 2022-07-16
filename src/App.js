@@ -124,9 +124,9 @@ function App() {
         />
         <Route
           exact
-          path="*"
+          path="/officeContact"
           render={() => (
-            <Home
+            <OfficeContact
               setShowHeader={setShowHeader}
               setHeaderColor={setHeaderColor}
             />
@@ -134,9 +134,9 @@ function App() {
         />
         <Route
           exact
-          path="/officeContact"
+          path="*"
           render={() => (
-            <OfficeContact
+            <Home
               setShowHeader={setShowHeader}
               setHeaderColor={setHeaderColor}
             />

@@ -113,7 +113,7 @@ export const ContactBanner = (props) => {
               <IconText>
                 {/* <AccessTime /> */}
 
-                <div style={{ color: "white", marginTop: "2%" }}>
+                <div style={{ color: "white", marginTop: "7%" }}>
                   Follow us on
                 </div>
               </IconText>
@@ -170,12 +170,13 @@ const useStyles = makeStyles((theme) => ({
   },
   borderAfter: {
     borderRight: "1px solid ",
+    marginTop: "2%",
     [theme.breakpoints.down("sm")]: {
       borderRight: "none",
     },
   },
   gridContainer: {
-    padding: "0 29px",
-    height: "135px",
+    padding: "0 32px",
+    height: "150px",
   },
 }));
