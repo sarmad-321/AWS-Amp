@@ -89,7 +89,7 @@ export const OfficeContact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!name || UserEmail) {
+    if (!name || !UserEmail || !msg) {
       return alert("Please provide all required fields");
     }
 
